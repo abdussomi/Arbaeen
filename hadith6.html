@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hadith 06</title>
+<style>
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    background-color: transparent; 
+    padding: 15px; 
+    color: #37352f; 
+    margin: 0;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e9e9e6;
+  }
+  .header-area {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header-icon {
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
+  .header-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #37352f;
+    margin: 0;
+  }
+  .badge {
+    display: inline-block;
+    background: #f1f1ef;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #7c7b77;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  .instruction {
+    font-size: 13px;
+    color: #7c7b77;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .arabic-text { 
+    font-size: 28px; 
+    line-height: 2.6; 
+    direction: rtl; 
+    text-align: right; 
+    white-space: normal;
+    word-break: keep-all;
+    user-select: none;
+    margin-bottom: 25px;
+  }
+  .word { 
+    display: inline-block; 
+    cursor: pointer; 
+    padding: 2px 6px; 
+    margin: 3px 4px; 
+    border-radius: 4px; 
+    background-color: #f7f7f5;
+    border: 1px solid #e9e9e6;
+    transition: all 0.15s ease; 
+  }
+  .word:hover { 
+    background: #efefed; 
+    color: #2383e2; 
+  }
+  .word.active {
+    background: #edf2f7;
+    color: #2b6cb0;
+    border-color: #2b6cb0;
+    font-weight: 600;
+  }
+  .analysis-panel { 
+    padding: 20px; 
+    background: #f7f7f5; 
+    border-radius: 8px; 
+    font-size: 15px; 
+    text-align: left; 
+    border-left: 4px solid #2b6cb0;
+    margin-bottom: 25px;
+  }
+  .panel-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e9e9e6;
+    padding-bottom: 6px;
+  }
+  .data-row {
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+  .label {
+    font-weight: 600;
+    color: #7c7b77;
+    display: inline-block;
+    width: 130px;
+  }
+  .value {
+    color: #37352f;
+    font-weight: 500;
+  }
+  .translation-box {
+    padding: 20px;
+    background: #fcfcfc;
+    border: 1px solid #e9e9e6;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #37352f;
+    text-align: left;
+  }
+  .translation-title {
+    font-weight: bold;
+    color: #7c7b77;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header-area">
+    <div class="header-icon">📖</div>
+    <h1 class="header-title">The Lawful and the Unlawful</h1>
+    <span class="badge">Hadith 06 / 40</span>
+  </div>
+
+  <div class="instruction">💡 Click any Arabic word below to analyze its root, grammar, and tense.</div>
+  
+  <div class="arabic-text">
+    <span class="word" onclick="showData(this)" data-word="عَنْ" data-meaning="On the authority of / From" data-root="N/A" data-type="Preposition" data-tense="N/A">عَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="أَبِي" data-meaning="Father of" data-root="أ - ب - و" data-type="Noun (Genitive)" data-tense="N/A">أَبِي</span>
+    <span class="word" onclick="showData(this)" data-word="عَبْدِ" data-meaning="Slave / Servant of" data-root="ع - ب - د" data-type="Noun (Genitive)" data-tense="N/A">عَبْدِ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="النُّعْمَانِ" data-meaning="An-Nu'man" data-root="ن - ع - م" data-type="Proper Noun (Definite)" data-tense="N/A">النُّعْمَانِ</span>
+    <span class="word" onclick="showData(this)" data-word="بْنِ" data-meaning="Son of" data-root="ب - ن - ى" data-type="Noun" data-tense="N/A">بْنِ</span>
+    <span class="word" onclick="showData(this)" data-word="بَشِيرٍ" data-meaning="Basheer" data-root="ب - ش - ر" data-type="Proper Noun" data-tense="N/A">بَشِيرٍ</span>
+    <span class="word" onclick="showData(this)" data-word="رَضِيَ" data-meaning="May He be pleased" data-root="ر - ض - ي" data-type="Verb" data-tense="Past (Madi)">رَضِيَ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word" onclick="showData(this)" data-word="عَنْهُمَا،" data-meaning="With both of them" data-root="N/A" data-type="Prepositional Phrase" data-tense="N/A">عَنْهُمَا،</span>
+    <span class="word" onclick="showData(this)" data-word="قَالَ:" data-meaning="He said" data-root="ق - و - ل" data-type="Verb" data-tense="Past (Madi)">قَالَ:</span>
+    <span class="word" onclick="showData(this)" data-word="سَمِعْتُ" data-meaning="I heard" data-root="س - م - ع" data-type="Verb" data-tense="Past (Madi)">سَمِعْتُ</span>
+    <span class="word" onclick="showData(this)" data-word="رَسُولَ" data-meaning="The Messenger" data-root="ر - س - ل" data-type="Noun" data-tense="N/A">رَسُولَ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Of Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="صلى الله عليه وسلم" data-meaning="Peace and blessings be upon him" data-root="N/A" data-type="Honorific Phrase" data-tense="N/A">صلى الله عليه وسلم</span>
+    <span class="word" onclick="showData(this)" data-word="يَقُولُ:" data-meaning="Saying / He says" data-root="ق - و - ل" data-type="Verb" data-tense="Present (Mudari)">يَقُولُ:</span>
+    <span class="word" onclick="showData(this)" data-word="&quot;إِنَّ" data-meaning="Indeed / Verily" data-root="N/A" data-type="Accusative Particle" data-tense="N/A">"إنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="الْحَلَالَ" data-meaning="The Lawful" data-root="ح - ل - ل" data-type="Noun (Definite, Accusative)" data-tense="N/A">الْحَلَالَ</span>
+    <span class="word" onclick="showData(this)" data-word="بَيِّنٌ،" data-meaning="Is clear / manifest" data-root="ب - ي - ن" data-type="Noun / Adjective" data-tense="N/A">بَيِّنٌ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَإِنَّ" data-meaning="And indeed" data-root="N/A" data-type="Conjunction + Particle" data-tense="N/A">وَإِنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="الْحَرَامَ" data-meaning="The Unlawful" data-root="ح - ر - م" data-type="Noun (Definite, Accusative)" data-tense="N/A">الْحَرَامَ</span>
+    <span class="word" onclick="showData(this)" data-word="بَيِّنٌ،" data-meaning="Is clear / manifest" data-root="ب - ي - ن" data-type="Noun / Adjective" data-tense="N/A">بَيِّنٌ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَبَيْنَهُمَا" data-meaning="And between the two of them" data-root="ب - ي - ن" data-type="Adverb + Attached Pronoun" data-tense="N/A">وَبَيْنَهُمَا</span>
+    <span class="word" onclick="showData(this)" data-word="أُمُورٌ" data-meaning="Matters / Affairs" data-root="أ - م - ر" data-type="Noun (Plural)" data-tense="N/A">أُمُورٌ</span>
+    <span class="word" onclick="showData(this)" data-word="مُشْتَبِهَاتٌ" data-meaning="Doubtful / Ambiguous things" data-root="ش - ب - ه" data-type="Active Participle (Plural)" data-tense="N/A">مُشْتَبِهَاتٌ</span>
+    <span class="word" onclick="showData(this)" data-word="لَا" data-meaning="Not" data-root="N/A" data-type="Negative Particle" data-tense="N/A">لَا</span>
+    <span class="word" onclick="showData(this)" data-word="يَعْلَمُهُنَّ" data-meaning="Know them" data-root="ع - ل - م" data-type="Verb + Attached Pronoun" data-tense="Present (Mudari)">يَعْلَمُهُنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="كَثِيرٌ" data-meaning="Many" data-root="ك - ث - ر" data-type="Noun / Adjective" data-tense="N/A">كَثِيرٌ</span>
+    <span class="word" onclick="showData(this)" data-word="مِنْ" data-meaning="From / Of" data-root="N/A" data-type="Preposition" data-tense="N/A">مِنْ</span>
+    <span class="word" onclick="showData(this)" data-word="النَّاسِ،" data-meaning="The people" data-root="أ - ن - س" data-type="Noun (Definite, Genitive)" data-tense="N/A">النَّاسِ،</span>
+    <span class="word" onclick="showData(this)" data-word="فَمَنْ" data-meaning="So whoever" data-root="N/A" data-type="Conditional Particle" data-tense="N/A">فَمَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="اتَّقَى" data-meaning="Avoids / Guards against" data-root="و - ق - ي" data-type="Verb (Form VIII)" data-tense="Past (used conditionally)">اتَّقَى</span>
+    <span class="word" onclick="showData(this)" data-word="الشُّبُهَاتِ" data-meaning="The doubtful matters" data-root="ش - ب - ه" data-type="Noun (Definite, Plural)" data-tense="N/A">الشُّبُهَاتِ</span>
+    <span class="word" onclick="showData(this)" data-word="فَقَدِ" data-meaning="Then certainly he" data-root="N/A" data-type="Result Particle + Certainty Particle" data-tense="N/A">فَقَدِ</span>
+    <span class="word" onclick="showData(this)" data-word="اسْتَبْرَأَ" data-meaning="Cleared / safeguarded himself" data-root="ب - ر - أ" data-type="Verb (Form X)" data-tense="Past (Madi)">اسْتَبْرَأَ</span>
+    <span class="word" onclick="showData(this)" data-word="لِدِينِهِ" data-meaning="For his religion" data-root="د - ي - ن" data-type="Preposition + Noun + Pronoun" data-tense="N/A">لِدِينِهِ</span>
+    <span class="word" onclick="showData(this)" data-word="وَعِرْضِهِ،" data-meaning="And his honour" data-root="ع - ر - ض" data-type="Noun Phrase" data-tense="N/A">وَعِرْضِهِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَمَنْ" data-meaning="And whoever" data-root="N/A" data-type="Conjunction + Conditional Particle" data-tense="N/A">وَمَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="وَقَعَ" data-meaning="Falls / enters into" data-root="و - ق - ع" data-type="Verb" data-tense="Past (Madi)">وَقَعَ</span>
+    <span class="word" onclick="showData(this)" data-word="فِي" data-meaning="In / into" data-root="N/A" data-type="Preposition" data-tense="N/A">فِي</span>
+    <span class="word" onclick="showData(this)" data-word="الشُّبُهَاتِ" data-meaning="The doubtful matters" data-root="ش - ب - ه" data-type="Noun (Definite, Plural)" data-tense="N/A">الشُّبُهَاتِ</span>
+    <span class="word" onclick="showData(this)" data-word="وَقَعَ" data-meaning="Falls / enters" data-root="و - ق - ع" data-type="Verb" data-tense="Past (Madi)">وَقَعَ</span>
+    <span class="word" onclick="showData(this)" data-word="فِي" data-meaning="In / into" data-root="N/A" data-type="Preposition" data-tense="N/A">فِي</span>
+    <span class="word" onclick="showData(this)" data-word="الْحَرَامِ،" data-meaning="The Unlawful" data-root="ح - ر - م" data-type="Noun (Definite)" data-tense="N/A">الْحَرَامِ،</span>
+    <span class="word" onclick="showData(this)" data-word="كَالرَّاعِي" data-meaning="Like the shepherd" data-root="ر - ع - ي" data-type="Preposition + Active Participle (Definite)" data-tense="N/A">كَالرَّاعِي</span>
+    <span class="word" onclick="showData(this)" data-word="يَرْعَى" data-meaning="He pastures / grazes" data-root="ر - ع - ي" data-type="Verb" data-tense="Present (Mudari)">يَرْعَى</span>
+    <span class="word" onclick="showData(this)" data-word="حَوْلَ" data-meaning="Around" data-root="ح - و - ل" data-type="Adverb of Place" data-tense="N/A">حَوْلَ</span>
+    <span class="word" onclick="showData(this)" data-word="الْحِمَى" data-meaning="The sanctuary / private pasture" data-root="ح - م - ي" data-type="Noun (Definite)" data-tense="N/A">الْحِمَى</span>
+    <span class="word" onclick="showData(this)" data-word="يُوشِكُ" data-meaning="He is about to / on the verge of" data-root="و - ش - ك" data-type="Verb" data-tense="Present (Mudari)">يُوشِكُ</span>
+    <span class="word" onclick="showData(this)" data-word="أَنْ" data-meaning="That" data-root="N/A" data-type="Subordinating Particle" data-tense="N/A">أَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="يَرْتَعَ" data-meaning="He grazes" data-root="ر - ت - ع" data-type="Verb" data-tense="Present (Subjunctive)">يَرْتَعَ</span>
+    <span class="word" onclick="showData(this)" data-word="فِيهِ،" data-meaning="In it" data-root="N/A" data-type="Preposition Phrase" data-tense="N/A">فِيهِ،</span>
+    <span class="word" onclick="showData(this)" data-word="أَلَا" data-meaning="Lo! / Truly / Unquestionably" data-root="N/A" data-type="Attention Particle" data-tense="N/A">أَلَا</span>
+    <span class="word" onclick="showData(this)" data-word="وَإِنَّ" data-meaning="And behold / And truly" data-root="N/A" data-type="Conjunction + Particle" data-tense="N/A">وَإِنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="لِكُلِّ" data-meaning="For every" data-root="ك - ل - ل" data-type="Preposition + Noun" data-tense="N/A">لِكُلِّ</span>
+    <span class="word" onclick="showData(this)" data-word="مَلِكٍ" data-meaning="King" data-root="م - ل - ك" data-type="Noun" data-tense="N/A">مَلِكٍ</span>
+    <span class="word" onclick="showData(this)" data-word="حِمًى،" data-meaning="A sanctuary" data-root="ح - م - ي" data-type="Noun" data-tense="N/A">حِمًى،</span>
+    <span class="word" onclick="showData(this)" data-word="أَلَا" data-meaning="Lo! / Truly" data-root="N/A" data-type="Attention Particle" data-tense="N/A">أَلَا</span>
+    <span class="word" onclick="showData(this)" data-word="وَإِنَّ" data-meaning="And truly" data-root="N/A" data-type="Conjunction + Particle" data-tense="N/A">وَإِنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="حِمَى" data-meaning="The sanctuary of" data-root="ح - م - ي" data-type="Noun" data-tense="N/A">حِمَى</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="مَحَارِمُهُ،" data-meaning="His prohibitions" data-root="ح - ر - م" data-type="Noun (Plural) + Pronoun" data-tense="N/A">مَحَارِمُهُ،</span>
+    <span class="word" onclick="showData(this)" data-word="أَلَا" data-meaning="Lo! / Truly" data-root="N/A" data-type="Attention Particle" data-tense="N/A">أَلَا</span>
+    <span class="word" onclick="showData(this)" data-word="وَإِنَّ" data-meaning="And truly" data-root="N/A" data-type="Conjunction + Particle" data-tense="N/A">وَإِنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="فِي" data-meaning="In" data-root="N/A" data-type="Preposition" data-tense="N/A">فِي</span>
+    <span class="word" onclick="showData(this)" data-word="الْجَسَدِ" data-meaning="The body" data-root="ج - س - د" data-type="Noun (Definite)" data-tense="N/A">الْجَسَدِ</span>
+    <span class="word" onclick="showData(this)" data-word="مُضْغَةً" data-meaning="A morsel of flesh" data-root="م - ض - غ" data-type="Noun" data-tense="N/A">مُضْغَةً</span>
+    <span class="word" onclick="showData(this)" data-word="إِذَا" data-meaning="When / If" data-root="N/A" data-type="Conditional Time Adverb" data-tense="N/A">إذَا</span>
+    <span class="word" onclick="showData(this)" data-word="صَلَحَتْ" data-meaning="It is whole / sound / righteous" data-root="ص - ل - ح" data-type="Verb" data-tense="Past (Madi)">صَلَحَتْ</span>
+    <span class="word" onclick="showData(this)" data-word="صَلَحَ" data-meaning="Becomes sound / whole" data-root="ص - ل - ح" data-type="Verb" data-tense="Past (Madi)">صَلَحَ</span>
+    <span class="word" onclick="showData(this)" data-word="الْجَسَدُ" data-meaning="The body" data-root="ج - س - د" data-type="Noun (Definite)" data-tense="N/A">الْجَسَدُ</span>
+    <span class="word" onclick="showData(this)" data-word="كُلُّهُ،" data-meaning="All of it" data-root="ك - ل - ل" data-type="Noun + Pronoun" data-tense="N/A">كُلُّهُ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَإِذَا" data-meaning="And when / if" data-root="N/A" data-type="Conjunction + Adverb" data-tense="N/A">وَإِذَا</span>
+    <span class="word" onclick="showData(this)" data-word="فَسَدَتْ" data-meaning="It is corrupt / diseased" data-root="ف - س - د" data-type="Verb" data-tense="Past (Madi)">فَسَدَتْ</span>
+    <span class="word" onclick="showData(this)" data-word="فَسَدَ" data-meaning="Becomes corrupt / diseased" data-root="ف - س - د" data-type="Verb" data-tense="Past (Madi)">فَسَدَ</span>
+    <span class="word" onclick="showData(this)" data-word="الْجَسَدُ" data-meaning="The body" data-root="ج - س - د" data-type="Noun (Definite)" data-tense="N/A">الْجَسَدُ</span>
+    <span class="word" onclick="showData(this)" data-word="كُلُّهُ،" data-meaning="All of it" data-root="ك - ل - ل" data-type="Noun + Pronoun" data-tense="N/A">كُلُّهُ،</span>
+    <span class="word" onclick="showData(this)" data-word="أَلَا" data-meaning="Lo! / Truly" data-root="N/A" data-type="Attention Particle" data-tense="N/A">أَلَا</span>
+    <span class="word" onclick="showData(this)" data-word="وَهِيَ" data-meaning="And it is" data-root="N/A" data-type="Conjunction + Pronoun" data-tense="N/A">وَهِيَ</span>
+    <span class="word" onclick="showData(this)" data-word="الْقَلْبُ&quot;." data-meaning="The heart" data-root="ق - ل - ب" data-type="Noun (Definite)" data-tense="N/A">الْقَلْبُ".</span>
+    <span class="word" onclick="showData(this)" data-word="[رَوَاهُ" data-meaning="Narrated it" data-root="ر - و - ي" data-type="Verb + Pronoun" data-tense="Past (Madi)">[رَوَاهُ</span>
+    <span class="word" onclick="showData(this)" data-word="الْبُخَارِيُّ]،" data-meaning="Al-Bukhari" data-root="ب - خ - ر" data-type="Proper Noun" data-tense="N/A">الْبُخَارِيُّ]،</span>
+    <span class="word" onclick="showData(this)" data-word="[وَمُسْلِمٌ] ." data-meaning="And Muslim" data-root="س - ل - م" data-type="Conjunction + Proper Noun" data-tense="N/A">[وَمُسْلِمٌ] .</span>
+  </div>
+
+  <div id="analysis-panel" class="analysis-panel">
+    <div id="panel-word" class="panel-header">Select a Word Above</div>
+    <div class="data-row"><span class="label">Translation:</span><span id="panel-meaning" class="value">Click a boxed word to start</span></div>
+    <div class="data-row"><span class="label">Arabic Root:</span><span id="panel-root" class="value">-</span></div>
+    <div class="data-row"><span class="label">Part of Speech:</span><span id="panel-type" class="value">-</span></div>
+    <div class="data-row"><span class="label">Verb Tense:</span><span id="panel-tense" class="value">-</span></div>
+  </div>
+
+  <div class="translation-box">
+    <div class="translation-title">Full English Translation</div>
+    On the authority of an-Nu’man ibn Basheer (ra), who said: I heard the Messenger of Allah (ﷺ) say, “That which is lawful is clear and that which is unlawful is clear, and between the two of them are doubtful matters about which many people do not know. Thus he who avoids doubtful matters clears himself in regard to his religion and his honor, but he who falls into doubtful matters [eventually] falls into that which is unlawful, like the shepherd who pastures around a sanctuary, all but grazing therein. Truly every king has a sanctuary, and truly Allah’s sanctuary is His prohibitions. Truly in the body there is a morsel of flesh, which, if it be whole, all the body is whole, and which, if it is diseased, all of [the body] is diseased. Truly, it is the heart.” [Bukhari & Muslim]
+  </div>
+</div>
+
+<script>
+  function showData(element) {
+    const allWords = document.querySelectorAll('.word');
+    allWords.forEach(w => w.classList.remove('active'));
+    element.classList.add('active');
+    
+    document.getElementById('panel-word').innerText = element.getAttribute('data-word');
+    document.getElementById('panel-meaning').innerText = element.getAttribute('data-meaning');
+    document.getElementById('panel-root').innerText = element.getAttribute('data-root');
+    document.getElementById('panel-type').innerText = element.getAttribute('data-type');
+    document.getElementById('panel-tense').innerText = element.getAttribute('data-tense');
+    
+    document.getElementById('analysis-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+</script>
+</body>
+</html>
