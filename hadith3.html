@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hadith 03 - Five Pillars of Islam</title>
+<style>
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    background-color: transparent; 
+    padding: 15px; 
+    color: #37352f; 
+    margin: 0;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e9e9e6;
+  }
+  .header-area {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header-icon {
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
+  .header-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #37352f;
+    margin: 0;
+  }
+  .badge {
+    display: inline-block;
+    background: #f1f1ef;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #7c7b77;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  .instruction {
+    font-size: 13px;
+    color: #7c7b77;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .arabic-text { 
+    font-size: 28px; 
+    line-height: 2.6; 
+    direction: rtl; 
+    text-align: right; 
+    white-space: normal;
+    word-break: keep-all;
+    user-select: none;
+    margin-bottom: 25px;
+  }
+  .word { 
+    display: inline-block; 
+    cursor: pointer; 
+    padding: 2px 6px; 
+    margin: 3px 4px; 
+    border-radius: 4px; 
+    background-color: #f7f7f5;
+    border: 1px solid #e9e9e6;
+    transition: all 0.15s ease; 
+  }
+  .word:hover { 
+    background: #efefed; 
+    color: #2383e2; 
+  }
+  .word.active {
+    background: #edf2f7;
+    color: #2b6cb0;
+    border-color: #2b6cb0;
+    font-weight: 600;
+  }
+  .analysis-panel { 
+    padding: 20px; 
+    background: #f7f7f5; 
+    border-radius: 8px; 
+    font-size: 15px; 
+    text-align: left; 
+    border-left: 4px solid #2b6cb0;
+    margin-bottom: 25px;
+  }
+  .panel-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e9e9e6;
+    padding-bottom: 6px;
+  }
+  .data-row {
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+  .label {
+    font-weight: 600;
+    color: #7c7b77;
+    display: inline-block;
+    width: 130px;
+  }
+  .value {
+    color: #37352f;
+    font-weight: 500;
+  }
+  .translation-box {
+    padding: 20px;
+    background: #fcfcfc;
+    border: 1px solid #e9e9e6;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #37352f;
+    text-align: left;
+  }
+  .translation-title {
+    font-weight: bold;
+    color: #7c7b77;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header-area">
+    <div class="header-icon">📖</div>
+    <h1 class="header-title">The Five Pillars of Islam</h1>
+    <span class="badge">Hadith 03 / 40</span>
+  </div>
+
+  <div class="instruction">💡 Click any Arabic word below to analyze its root, grammar, and tense.</div>
+  
+  <div class="arabic-text">
+    <span class="word" onclick="showData(this)" data-word="عَنْ" data-meaning="On the authority of / From" data-root="N/A" data-type="Preposition" data-tense="N/A">عَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="أَبِي" data-meaning="Father of" data-root="أ - ب - و" data-type="Noun (Genitive)" data-tense="N/A">أَبِي</span>
+    <span class="word" onclick="showData(this)" data-word="عَبْدِ الرَّحْمَنِ" data-meaning="Abd al-Rahman (Servant of the Most Merciful)" data-root="ع - ب - د / ر - ح - م" data-type="Noun Phrase (Genitive Compound)" data-tense="N/A">عَبْدِ الرَّحْمَنِ</span>
+    <span class="word" onclick="showData(this)" data-word="عَبْدِ اللَّهِ" data-meaning="Abdullah (Servant of Allah)" data-root="ع - ب - د / إلَه" data-type="Noun Phrase (Genitive Compound)" data-tense="N/A">عَبْدِ اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="بْنِ" data-meaning="Son of" data-root="ب - ن - ى" data-type="Noun" data-tense="N/A">بْنِ</span>
+    <span class="word" onclick="showData(this)" data-word="عُمَرَ" data-meaning="Umar" data-root="ع - م - ر" data-type="Proper Noun" data-tense="N/A">عُمَرَ</span>
+    <span class="word" onclick="showData(this)" data-word="بْنِ" data-meaning="Son of" data-root="ب - ن - ى" data-type="Noun" data-tense="N/A">بْنِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْخَطَّابِ" data-meaning="Al-Khattab" data-root="خ - ط - ب" data-type="Proper Noun" data-tense="N/A">الْخَطَّابِ</span>
+    <span class="word" onclick="showData(this)" data-word="رَضِيَ" data-meaning="May He be pleased" data-root="ر - ض - ي" data-type="Verb" data-tense="Past (Madi)">رَضِيَ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word" onclick="showData(this)" data-word="عَنْهُمَا" data-meaning="With both of them" data-root="N/A" data-type="Preposition + Dual Pronoun" data-tense="N/A">عَنْهُمَا</span>
+    <span class="word" onclick="showData(this)" data-word="قَالَ:" data-meaning="He said" data-root="ق - و - ل" data-type="Verb" data-tense="Past (Madi)">قَالَ:</span>
+    <span class="word" onclick="showData(this)" data-word="سَمِعْتُ" data-meaning="I heard" data-root="س - م - ع" data-type="Verb (1st Person Singular)" data-tense="Past (Madi)">سَمِعْتُ</span>
+    <span class="word" onclick="showData(this)" data-word="رَسُولَ" data-meaning="The Messenger" data-root="ر - س - ل" data-type="Noun (Accusative)" data-tense="N/A">رَسُولَ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Of Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="صلى الله عليه و سلم" data-meaning="Peace and blessings be upon him" data-root="N/A" data-type="Honorific Phrase" data-tense="N/A">صلى الله عليه و سلم</span>
+    <span class="word" onclick="showData(this)" data-word="يَقُولُ:" data-meaning="Saying / He says" data-root="ق - و - ل" data-type="Verb" data-tense="Present (Mudari)">يَقُولُ:</span>
+    <span class="word" onclick="showData(this)" data-word="&quot; بُنِيَ" data-meaning="Built / Has been founded" data-root="ب - n - ى" data-type="Passive Verb" data-tense="Past Passive">" بُنِيَ</span>
+    <span class="word" onclick="showData(this)" data-word="الْإِسْلَامُ" data-meaning="Islam" data-root="س - ل - م" data-type="Noun (Definite, Nominative)" data-tense="N/A">الْإِسْلَامُ</span>
+    <span class="word" onclick="showData(this)" data-word="عَلَى" data-meaning="On / Upon" data-root="N/A" data-type="Preposition" data-tense="N/A">عَلَى</span>
+    <span class="word" onclick="showData(this)" data-word="خَمْسٍ:" data-meaning="Five [pillars]" data-root="خ - م - س" data-type="Numeral Noun" data-tense="N/A">خَمْسٍ:</span>
+    <span class="word" onclick="showData(this)" data-word="شَهَادَةِ" data-meaning="Testifying / Bearing witness" data-root="ش - ه - د" data-type="Noun (Genitive)" data-tense="N/A">شَهَادَةِ</span>
+    <span class="word" onclick="showData(this)" data-word="أَنْ" data-meaning="That" data-root="N/A" data-type="Particle" data-tense="N/A">أَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="لَا" data-meaning="No / None" data-root="N/A" data-type="Negative Particle" data-tense="N/A">لَا</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَهَ" data-meaning="Deity worthy of worship" data-root="إلَه" data-type="Noun" data-tense="N/A">إلَهَ</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَّا" data-meaning="Except" data-root="N/A" data-type="Exceptive Particle" data-tense="N/A">إلَّا</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word" onclick="showData(this)" data-word="وَأَنَّ" data-meaning="And that" data-root="N/A" data-type="Conjunction + Particle" data-tense="N/A">وَأَنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="مُحَمَّدًا" data-meaning="Muhammad is" data-root="ح - م - د" data-type="Proper Noun" data-tense="N/A">مُحَمَّدًا</span>
+    <span class="word" onclick="showData(this)" data-word="رَسُولُ" data-meaning="The Messenger" data-root="ر - س - ل" data-type="Noun" data-tense="N/A">رَسُولُ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ،" data-meaning="Of Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَإِقَامِ" data-meaning="And establishing" data-root="ق - و - م" data-type="Conjunction + Noun (Verbal Noun)" data-tense="N/A">وَإِقَامِ</span>
+    <span class="word" onclick="showData(this)" data-word="الصَّلَاةِ،" data-meaning="The ritual prayer (Salah)" data-root="ص - ل - و" data-type="Noun (Definite, Genitive)" data-tense="N/A">الصَّلَاةِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَإِيتَاءِ" data-meaning="And paying / giving" data-root="أ - ت - ي" data-type="Conjunction + Noun (Verbal Noun)" data-tense="N/A">وَإِيتَاءِ</span>
+    <span class="word" onclick="showData(this)" data-word="الزَّكَاةِ،" data-meaning="The obligatory charity (Zakat)" data-root="ز - ك - و" data-type="Noun (Definite, Genitive)" data-tense="N/A">الزَّكَاةِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَحَجِّ" data-meaning="And performing pilgrimage (Hajj)" data-root="ح - ج - ج" data-type="Conjunction + Noun (Verbal Noun)" data-tense="N/A">وَحَجِّ</span>
+    <span class="word" onclick="showData(this)" data-word="الْبَيْتِ،" data-meaning="The House (Ka'bah)" data-root="ب - ي - ت" data-type="Noun (Definite, Genitive)" data-tense="N/A">الْبَيْتِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَصَوْمِ" data-meaning="And fasting" data-root="ص - و - م" data-type="Conjunction + Noun (Verbal Noun)" data-tense="N/A">وَصَوْمِ</span>
+    <span class="word" onclick="showData(this)" data-word="رَمَضَانَ&quot;." data-meaning="Ramadhan" data-root="ر - م - ض" data-type="Proper Noun" data-tense="N/A">رَمَضَانَ".</span>
+    <span class="word" onclick="showData(this)" data-word="[رَوَاهُ" data-meaning="Narrated it" data-root="ر - و - ي" data-type="Verb + Attached Pronoun" data-tense="Past (Madi)">[رَوَاهُ</span>
+    <span class="word" onclick="showData(this)" data-word="الْبُخَارِيُّ]" data-meaning="Al-Bukhari" data-root="ب - خ - ر" data-type="Proper Noun" data-tense="N/A">الْبُخَارِيُّ]</span>
+    <span class="word" onclick="showData(this)" data-word="[وَمُسْلِمٌ]." data-meaning="And Muslim" data-root="س - ل - م" data-type="Conjunction + Proper Noun" data-tense="N/A">، [وَمُسْلِمٌ].</span>
+  </div>
+
+  <div id="analysis-panel" class="analysis-panel">
+    <div id="panel-word" class="panel-header">Select a Word Above</div>
+    <div class="data-row"><span class="label">Translation:</span><span id="panel-meaning" class="value">Click a boxed word to start</span></div>
+    <div class="data-row"><span class="label">Arabic Root:</span><span id="panel-root" class="value">-</span></div>
+    <div class="data-row"><span class="label">Part of Speech:</span><span id="panel-type" class="value">-</span></div>
+    <div class="data-row"><span class="label">Verb Tense:</span><span id="panel-tense" class="value">-</span></div>
+  </div>
+
+  <div class="translation-box">
+    <div class="translation-title">Full English Translation</div>
+    On the authority of Abdullah, the son of Umar ibn al-Khattab (ra), who said: I heard the Messenger of Allah (ﷺ) say, "Islam has been built on five [pillars]: testifying that there is no deity worthy of worship except Allah and that Muhammad is the Messenger of Allah, establishing the salah (prayer), paying the zakat (obligatory charity), making the hajj (pilgrimage) to the House, and fasting in Ramadhan." [Bukhari & Muslim]
+  </div>
+</div>
+
+<script>
+  function showData(element) {
+    const allWords = document.querySelectorAll('.word');
+    allWords.forEach(w => w.classList.remove('active'));
+    element.classList.add('active');
+    
+    document.getElementById('panel-word').innerText = element.getAttribute('data-word');
+    document.getElementById('panel-meaning').innerText = element.getAttribute('data-meaning');
+    document.getElementById('panel-root').innerText = element.getAttribute('data-root');
+    document.getElementById('panel-type').innerText = element.getAttribute('data-type');
+    document.getElementById('panel-tense').innerText = element.getAttribute('data-tense');
+    
+    document.getElementById('analysis-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+</script>
+</body>
+</html>
