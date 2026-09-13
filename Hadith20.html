@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hadith 20</title>
+<style>
+  body { font-family: sans-serif; padding: 15px; color: #37352f; margin: 0; background: transparent; }
+  .container { max-width: 100%; background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e9e9e6; }
+  .header-area { text-align: center; margin-bottom: 20px; }
+  .header-icon { font-size: 45px; }
+  .header-title { font-size: 20px; font-weight: bold; margin: 0; }
+  .badge { display: inline-block; background: #f1f1ef; padding: 3px 8px; border-radius: 4px; font-size: 11px; color: #7c7b77; font-weight: 600; }
+  .instruction { font-size: 13px; color: #7c7b77; text-align: center; margin-bottom: 20px; }
+  .arabic-text { font-size: 28px; line-height: 2.6; direction: rtl; text-align: right; margin-bottom: 25px; }
+  .word { display: inline-block; cursor: pointer; padding: 2px 6px; margin: 3px 4px; border-radius: 4px; background-color: #f7f7f5; border: 1px solid #e9e9e6; }
+  .word:hover { background: #efefed; color: #2383e2; }
+  .word.active { background: #edf2f7; color: #2b6cb0; border-color: #2b6cb0; font-weight: 600; }
+  .analysis-panel { padding: 20px; background: #f7f7f5; border-radius: 8px; font-size: 15px; border-left: 4px solid #2b6cb0; margin-bottom: 25px; }
+  .panel-header { font-size: 24px; font-weight: bold; color: #2b6cb0; margin-bottom: 15px; border-bottom: 1px solid #e9e9e6; padding-bottom: 6px; }
+  .data-row { margin: 8px 0; }
+  .label { font-weight: 600; color: #7c7b77; display: inline-block; width: 130px; }
+  .value { color: #37352f; }
+  .translation-box { padding: 20px; background: #fcfcfc; border: 1px solid #e9e9e6; border-radius: 8px; font-size: 15px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header-area"><div class="header-icon">🌸</div><h1 class="header-title">Modesty and Shame</h1><span class="badge">Hadith 20 / 40</span></div>
+  <div class="instruction">💡 Click any Arabic word below to analyze its root, grammar, and tense.</div>
+  
+  <div class="arabic-text">
+    <span class="word" onclick="showData(this)" data-word="عَنْ" data-meaning="On the authority of" data-root="N/A" data-type="Preposition" data-tense="N/A">عَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="أَبِي" data-meaning="Father of" data-root="أ - ب - و" data-type="Noun (Genitive)" data-tense="N/A">أَبِي</span>
+    <span class="word" onclick="showData(this)" data-word="مَسْعُودٍ" data-meaning="Masood" data-root="س - ع - د" data-type="Proper Noun" data-tense="N/A">مَسْعُودٍ</span>
+    <span class="word" onclick="showData(this)" data-word="عُقْبَةَ" data-meaning="Uqbah" data-root="ع - ق - ب" data-type="Proper Noun (Diptote)" data-tense="N/A">عُقْبَةَ</span>
+    <span class="word" onclick="showData(this)" data-word="بْنِ" data-meaning="Son of" data-root="ب - ن - ى" data-type="Noun" data-tense="N/A">بْنِ</span>
+    <span class="word" onclick="showData(this)" data-word="عَمْرٍو" data-meaning="Amr" data-root="ع - م - ر" data-type="Proper Noun" data-tense="N/A">عَمْرٍو</span>
+    <span class="word" onclick="showData(this)" data-word="الْأَنْصَارِيِّ" data-meaning="The Ansari (from Ansar)" data-root="ن - ص - ر" data-type="Adjective / Noun (Genitive, Definite)" data-tense="N/A">الْأَنْصَارِيِّ</span>
+    <span class="word" onclick="showData(this)" data-word="الْبَدْرِيِّ" data-meaning="The Badri (of Badr)" data-root="ب - د - ر" data-type="Adjective / Noun (Genitive, Definite)" data-tense="N/A">الْبَدْرِيِّ</span>
+    <span class="word" onclick="showData(this)" data-word="رَضِيَ" data-meaning="May He be pleased" data-root="ر - ض - ي" data-type="Verb" data-tense="Past (Madi)">رَضِيَ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word" onclick="showData(this)" data-word="عَنْهُ" data-meaning="With him" data-root="N/A" data-type="Prepositional Phrase" data-tense="N/A">عَنْهُ</span>
+    <span class="word" onclick="showData(this)" data-word="قَالَ:" data-meaning="Said" data-root="ق - و - ل" data-type="Verb" data-tense="Past (Madi)">قَالَ:</span>
+    <span class="word" onclick="showData(this)" data-word="قَالَ" data-meaning="Said" data-root="ق - و - ل" data-type="Verb" data-tense="Past (Madi)">قَالَ</span>
+    <span class="word" onclick="showData(this)" data-word="رَسُولُ" data-meaning="The Messenger of" data-root="ر - س - ل" data-type="Noun (Nominative)" data-tense="N/A">رَسُولُ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="صلى الله عليه و سلم" data-meaning="Peace and blessings be upon him" data-root="N/A" data-type="Honorific Phrase" data-tense="N/A">صلى الله عليه و سلم</span>
+    <span class="word" onclick="showData(this)" data-word="إنَّ" data-meaning="Verily / Indeed" data-root="N/A" data-type="Accusative Particle" data-tense="N/A">"إنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="مِمَّا" data-meaning="From what / part of what" data-root="N/A" data-type="Preposition + Relative Pronoun" data-tense="N/A">مِمَّا</span>
+    <span class="word" onclick="showData(this)" data-word="أَدْرَكَ" data-meaning="Learnt / reached" data-root="د - ر - ك" data-type="Verb (Form IV)" data-tense="Past (Madi)">أَدْرَكَ</span>
+    <span class="word" onclick="showData(this)" data-word="النَّاسُ" data-meaning="The people" data-root="ن - و - س" data-type="Noun (Definite, Nominative Subject)" data-tense="N/A">النَّاسُ</span>
+    <span class="word" onclick="showData(this)" data-word="مِنْ" data-meaning="From" data-root="N/A" data-type="Preposition" data-tense="N/A">مِنْ</span>
+    <span class="word" onclick="showData(this)" data-word="كَلَامِ" data-meaning="The speech / words of" data-root="ك - ل - م" data-type="Noun (Genitive)" data-tense="N/A">كَلَامِ</span>
+    <span class="word" onclick="showData(this)" data-word="النُّبُوَّةِ" data-meaning="The Prophecy" data-root="ن - ب - أ" data-type="Noun (Definite, Genitive)" data-tense="N/A">النُّبُوَّةِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْأُولَىٰ:" data-meaning="The earliest / first" data-root="أ - و - ل" data-type="Adjective (Definite, Genitive)" data-tense="N/A">الْأُولَىٰ:</span>
+    <span class="word" onclick="showData(this)" data-word="إِذَا" data-meaning="If / When" data-root="N/A" data-type="Conditional Particle" data-tense="N/A">إِذَا</span>
+    <span class="word" onclick="showData(this)" data-word="لَمْ" data-meaning="Not" data-root="N/A" data-type="Negative Particle" data-tense="N/A">لَمْ</span>
+    <span class="word" onclick="showData(this)" data-word="تَسْتَحِ" data-meaning="You feel shame / modesty" data-root="ح - ي - ي" data-type="Verb (Jussive)" data-tense="Present (Mudari) [Conditional]">تَسْتَحِ</span>
+    <span class="word" onclick="showData(this)" data-word="فَاصْنَعْ" data-meaning="Then do / make" data-root="ص - ن - ع" data-type="Conjunction + Imperative Verb" data-tense="Command (Amr)">فَاصْنَعْ</span>
+    <span class="word" onclick="showData(this)" data-word="مَا" data-meaning="What / Whatever" data-root="N/A" data-type="Relative Pronoun" data-tense="N/A">مَا</span>
+    <span class="word" onclick="showData(this)" data-word="شِئْتَ&quot;." data-meaning="You wish / desire" data-root="ش - ي - أ" data-type="Verb (2nd Person Singular)" data-tense="Past (Madi)">شِئْتَ".</span>
+    <span class="word" onclick="showData(this)" data-word="[رَوَاهُ" data-meaning="Narrated it" data-root="ر - و - ي" data-type="Verb + Attached Pronoun" data-tense="Past (Madi)">[رَوَاهُ</span>
+    <span class="word" onclick="showData(this)" data-word="الْبُخَارِيُّ]." data-meaning="Al-Bukhari" data-root="ب - خ - ر" data-type="Proper Noun" data-tense="N/A">الْبُخَارِيُّ].</span>
+  </div>
+
+  <div id="analysis-panel" class="analysis-panel" style="display:none;">
+    <div id="panel-word" class="panel-header">Select a Word</div>
+    <div class="data-row"><span class="label">Translation:</span><span id="panel-meaning" class="value">-</span></div>
+    <div class="data-row"><span class="label">Arabic Root:</span><span id="panel-root" class="value">-</span></div>
+    <div class="data-row"><span class="label">Part of Speech:</span><span id="panel-type" class="value">-</span></div>
+    <div class="data-row"><span class="label">Verb Tense:</span><span id="panel-tense" class="value">-</span></div>
+  </div>
+
+  <div class="translation-box">
+    <strong>Full English Translation</strong><br><br>
+    On the authority of Abu Masood Uqbah bin ’Amr al-Ansaree al-Badree (may Allah be pleased with him) who said: The Messenger of Allah (peace and blessings of Allah be upon him) said, “Verily, from what was learnt by the people from the speech of the earliest prophecy is: If you feel no shame, then do as you wish.” [Al-Bukhari]
+  </div>
+</div>
+
+<script>
+  function showData(element) {
+    const allWords = document.querySelectorAll('.word');
+    allWords.forEach(w => w.classList.remove('active'));
+    element.classList.add('active');
+    
+    document.getElementById('panel-word').innerText = element.getAttribute('data-word').replace(/[":.,()\[\]!]/g, '');
+    document.getElementById('panel-meaning').innerText = element.getAttribute('data-meaning');
+    document.getElementById('panel-root').innerText = element.getAttribute('data-root');
+    document.getElementById('panel-type').innerText = element.getAttribute('data-type');
+    document.getElementById('panel-tense').innerText = element.getAttribute('data-tense');
+    
+    const panel = document.getElementById('analysis-panel');
+    panel.style.display = 'block';
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+</script>
+</body>
+</html>
