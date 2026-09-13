@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hadith 1 Word Explorer</title>
+<style>
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    background-color: transparent; 
+    padding: 15px; 
+    color: #37352f; 
+    margin: 0;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #e9e9e6;
+  }
+  .instruction {
+    font-size: 13px;
+    color: #7c7b77;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .arabic-text { 
+    font-size: 30px; 
+    line-height: 2.6; 
+    direction: rtl; 
+    text-align: right; 
+    white-space: normal;
+    word-break: keep-all;
+    user-select: none;
+    margin-bottom: 25px;
+  }
+  .word { 
+    display: inline-block; 
+    cursor: pointer; 
+    padding: 2px 6px; 
+    margin: 2px 4px; 
+    border-radius: 4px; 
+    background-color: #f7f7f5;
+    border: 1px solid #e9e9e6;
+    transition: all 0.15s ease; 
+  }
+  .word:hover { 
+    background: #efefed; 
+    color: #2383e2; 
+  }
+  .word.active {
+    background: #edf2f7;
+    color: #2b6cb0;
+    border-color: #2b6cb0;
+    font-weight: 600;
+  }
+  .analysis-panel { 
+    padding: 20px; 
+    background: #f7f7f5; 
+    border-radius: 8px; 
+    font-size: 15px; 
+    text-align: left; 
+    border-left: 4px solid #2b6cb0;
+    margin-bottom: 25px;
+  }
+  .panel-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e9e9e6;
+    padding-bottom: 6px;
+  }
+  .data-row {
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+  .label {
+    font-weight: 600;
+    color: #7c7b77;
+    display: inline-block;
+    width: 130px;
+  }
+  .value {
+    color: #37352f;
+    font-weight: 500;
+  }
+  .translation-box {
+    padding: 20px;
+    background: #fffdf5;
+    border: 1px solid #f5ebd0;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    color: #37352f;
+  }
+  .translation-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b48305;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="instruction">💡 Click any boxed Arabic word below to analyze its meaning, root, and grammar.</div>
+  
+  <div class="arabic-text">
+    <span class="word" onclick="showData(this)" data-word="عَنْ" data-meaning="On the authority of / From" data-root="N/A (Particle)" data-type="Preposition" data-tense="N/A">عَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="أَمِيرِ" data-meaning="The Commander / Leader" data-root="أ - م - ر (A-M-R)" data-type="Noun (Genitive)" data-tense="N/A">أَمِيرِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْمُؤْمِنِينَ" data-meaning="The Believers" data-root="أ - م - ن (A-M-N)" data-type="Noun (Plural, Definite)" data-tense="N/A">الْمُؤْمِنِينَ</span>
+    <span class="word" onclick="showData(this)" data-word="أَبِي" data-meaning="Father of" data-root="أ - ب - و (A-B-W)" data-type="Noun (Genitive)" data-tense="N/A">أَبِي</span>
+    <span class="word" onclick="showData(this)" data-word="حَفْصٍ" data-meaning="Hafs" data-root="ح - ف - ص (Ḥ-F-Ṣ)" data-type="Proper Noun" data-tense="N/A">حَفْصٍ</span>
+    <span class="word" onclick="showData(this)" data-word="عُمَرَ" data-meaning="Umar" data-root="ع - م - ر (ʿ-M-R)" data-type="Proper Noun (Diptote)" data-tense="N/A">عُمَرَ</span>
+    <span class="word" onclick="showData(this)" data-word="بْنِ" data-meaning="Son of" data-root="ب - ن - ى (B-N-Y)" data-type="Noun" data-tense="N/A">بْنِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْخَطَّابِ" data-meaning="Al-Khattab" data-root="خ - ط - ب (Kh-Ṭ-B)" data-type="Proper Noun" data-tense="N/A">الْخَطَّابِ</span>
+    <span class="word" onclick="showData(this)" data-word="رَضِيَ" data-meaning="May He be pleased" data-root="ر - ض - ي (Ṛ-Ḍ-Y)" data-type="Verb" data-tense="Past (Madi)">رَضِيَ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="إلَه (Deity)" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word" onclick="showData(this)" data-word="عَنْهُ" data-meaning="With him" data-root="N/A" data-type="Prepositional Phrase" data-tense="N/A">عَنْهُ</span>
+    <span class="word" onclick="showData(this)" data-word="قَالَ" data-meaning="He said" data-root="ق - و - ل (Q-W-L)" data-type="Verb" data-tense="Past (Madi)">قَالَ:</span>
+    <span class="word" onclick="showData(this)" data-word="سَمِعْتُ" data-meaning="I heard" data-root="س - م - ع (S-M-ʿ)" data-type="Verb" data-tense="Past (Madi)">سَمِعْتُ</span>
+    <span class="word" onclick="showData(this)" data-word="رَسُولَ" data-meaning="The Messenger" data-root="ر - س - ل (R-S-L)" data-type="Noun (Accusative)" data-tense="N/A">رَسُولَ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Of Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="صلى الله عليه وسلم" data-meaning="Peace and blessings of Allah be upon him" data-root="N/A" data-type="Honorific Phrase" data-tense="N/A">صلى الله عليه وسلم</span>
+    <span class="word" onclick="showData(this)" data-word="يَقُولُ" data-meaning="Saying / He says" data-root="ق - و - ل (Q-W-L)" data-type="Verb" data-tense="Present (Mudari)">يَقُولُ:</span>
+    <span class="word" onclick="showData(this)" data-word="إِنَّمَا" data-meaning="Surely / Verily / Only" data-root="N/A" data-type="Restrictive Particle" data-tense="N/A">" إنَّمَا</span>
+    <span class="word" onclick="showData(this)" data-word="الْأَعْمَالُ" data-meaning="Actions / Deeds" data-root="ع - م - ل (ʿ-M-L)" data-type="Noun (Broken Plural)" data-tense="N/A">الْأَعْمَالُ</span>
+    <span class="word" onclick="showData(this)" data-word="بِالنِّيَّاتِ" data-meaning="By intentions / Motives" data-root="ن - و - ى (N-W-Y)" data-type="Preposition + Noun" data-tense="N/A">بِالنِّيَّاتِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَإِنَّمَا" data-meaning="And surely / And only" data-root="N/A" data-type="Conjunction + Particle" data-tense="N/A">وَإِنَّمَا</span>
+    <span class="word" onclick="showData(this)" data-word="لِكُلِّ" data-meaning="For every" data-root="ك - ل - ل (K-L-L)" data-type="Preposition + Noun" data-tense="N/A">لِكُلِّ</span>
+    <span class="word" onclick="showData(this)" data-word="امْرِئٍ" data-meaning="Person / Man" data-root="م - ر - أ (M-R-ʾ)" data-type="Noun (Genitive)" data-tense="N/A">امْرِئٍ</span>
+    <span class="word" onclick="showData(this)" data-word="مَا" data-meaning="What / That which" data-root="N/A" data-type="Relative Pronoun" data-tense="N/A">مَا</span>
+    <span class="word" onclick="showData(this)" data-word="نَوَى" data-meaning="He intended" data-root="ن - و - ى (N-W-Y)" data-type="Verb" data-tense="Past (Madi)">نَوَى،</span>
+    <span class="word" onclick="showData(this)" data-word="فَمَنْ" data-meaning="So whoever" data-root="N/A" data-type="Conditional Particle" data-tense="N/A">فَمَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="كَانَتْ" data-meaning="Was" data-root="ك - و - ن (K-W-N)" data-type="Verb (Feminine)" data-tense="Past (Madi)">كَانَتْ</span>
+    <span class="word" onclick="showData(this)" data-word="هِجْرَتُهُ" data-meaning="His migration" data-root="ه - ج - ر (H-J-R)" data-type="Noun + Pronoun" data-tense="N/A">هِجْرَتُهُ</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَى" data-meaning="To" data-root="N/A" data-type="Preposition" data-tense="N/A">إلَى</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="وَرَسُولِهِ" data-meaning="And His Messenger" data-root="ر - س - ل (R-S-L)" data-type="Noun + Pronoun" data-tense="N/A">وَرَسُولِهِ</span>
+    <span class="word" onclick="showData(this)" data-word="فَهِجْرَتُهُ" data-meaning="Then his migration" data-root="ه - ج - ر (H-J-R)" data-type="Noun + Pronoun" data-tense="N/A">فَهِجْرَتُهُ</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَى" data-meaning="To" data-root="N/A" data-type="Preposition" data-tense="N/A">إلَى</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="وَرَسُولِهِ" data-meaning="And His Messenger" data-root="ر - س - ل (R-S-L)" data-type="Noun + Pronoun" data-tense="N/A">وَرَسُولِهِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَمَنْ" data-meaning="And whoever" data-root="N/A" data-type="Conjunction + Particle" data-tense="N/A">وَمَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="كَانَتْ" data-meaning="Was" data-root="ك - و - ن (K-W-N)" data-type="Verb" data-tense="Past (Madi)">كَانَتْ</span>
+    <span class="word" onclick="showData(this)" data-word="هِجْرَتُهُ" data-meaning="His migration" data-root="ه - ج - ر (H-J-R)" data-type="Noun + Pronoun" data-tense="N/A">هِجْرَتُهُ</span>
+    <span class="word" onclick="showData(this)" data-word="لِدُنْيَا" data-meaning="For a worldly gain" data-root="د - ن - و (D-N-W)" data-type="Preposition + Noun" data-tense="N/A">لِدُنْيَا</span>
+    <span class="word" onclick="showData(this)" data-word="يُصِيبُهَا" data-meaning="He might acquire / attain it" data-root="ص - و - ب (Ṣ-W-B)" data-type="Verb + Pronoun" data-tense="Present (Mudari)">يُصِيبُهَا</span>
+    <span class="word" onclick="showData(this)" data-word="أَوْ" data-meaning="Or" data-root="N/A" data-type="Conjunction" data-tense="N/A">أَوْ</span>
+    <span class="word" onclick="showData(this)" data-word="امْرَأَةٍ" data-meaning="A woman" data-root="م - ر - أ (M-R-ʾ)" data-type="Noun" data-tense="N/A">امْرَأَةٍ</span>
+    <span class="word" onclick="showData(this)" data-word="يَنْكِحُهَا" data-meaning="He might marry her" data-root="ن - ك - ح (N-K-Ḥ)" data-type="Verb + Pronoun" data-tense="Present (Mudari)">يَنْكِحُهَا</span>
+    <span class="word" onclick="showData(this)" data-word="فَهِجْرَتُهُ" data-meaning="Then his migration" data-root="ه - ج - ر (H-J-R)" data-type="Noun + Pronoun" data-tense="N/A">فَهِجْرَتُهُ</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَى" data-meaning="To" data-root="N/A" data-type="Preposition" data-tense="N/A">إلَى</span>
+    <span class="word" onclick="showData(this)" data-word="مَا" data-meaning="What / That which" data-root="N/A" data-type="Relative Pronoun" data-tense="N/A">مَا</span>
+    <span class="word" onclick="showData(this)" data-word="هَاجَرَ" data-meaning="He migrated" data-root="ه - ج - ر (H-J-R)" data-type="Verb" data-tense="Past (Madi)">هَاجَرَ</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَيْهِ" data-meaning="To it" data-root="N/A" data-type="Preposition + Pronoun" data-tense="N/A">إلَيْهِ".</span>
+    <span class="word" onclick="showData(this)" data-word="رَوَاهُ" data-meaning="Narrated it" data-root="ر - و - ي (R-W-Y)" data-type="Verb + Attached Pronoun" data-tense="Past (Madi)">رَوَاهُ</span>
+    <span class="word" onclick="showData(this)" data-word="إِمَامَا" data-meaning="The two leaders / Imams" data-root="أ - م - م (A-M-M)" data-type="Noun (Dual, Nominative)" data-tense="N/A">إِمَامَا</span>
+    <span class="word" onclick="showData(this)" data-word="الْمُحَدِّثِينَ" data-meaning="The Hadith Scholars" data-root="ح - د - ث (Ḥ-D-Th)" data-type="Noun (Plural, Genitive)" data-tense="N/A">الْمُحَدِّثِينَ</span>
+    <span class="word" onclick="showData(this)" data-word="أَبُو" data-meaning="Father of" data-root="أ - ب - و (A-B-W)" data-type="Noun (Five Nouns)" data-tense="N/A">أَبُو</span>
+    <span class="word" onclick="showData(this)" data-word="عَبْدِ اللهِ" data-meaning="Abdullah (Servant of Allah)" data-root="ع - ب - د / إلَه" data-type="Compound Proper Noun" data-tense="N/A">عَبْدِ اللهِ</span>
+    <span class="word" onclick="showData(this)" data-word="مُحَمَّدُ" data-meaning="Muhammad" data-root="ح - م - د (Ḥ-M-D)" data-type="Proper Noun" data-tense="N/A">مُحَمَّدُ</span>
+    <span class="word" onclick="showData(this)" data-word="بنُ" data-meaning="Son of" data-root="ب - - ن ى (B-N-Y)" data-type="Noun" data-tense="N/A">بنُ</span>
+    <span class="word" onclick="showData(this)" data-word="إِسْمَاعِيل" data-meaning="Ismail" data-root="Foreign Name" data-type="Proper Noun" data-tense="N/A">إِسْمَاعِيل</span>
+    <span class="word" onclick="showData(this)" data-word="بن" data-meaning="Son of" data-root="ب - ن - ى" data-type="Noun" data-tense="N/A">بن</span>
+    <span class="word" onclick="showData(this)" data-word="إِبْرَاهِيم" data-meaning="Ibrahim" data-root="Foreign Name" data-type="Proper Noun" data-tense="N/A">إِبْرَاهِيم</span>
+    <span class="word" onclick="showData(this)" data-word="بن" data-meaning="Son of" data-root="ب - - ن ى" data-type="Noun" data-tense="N/A">بن</span>
+    <span class="word" onclick="showData(this)" data-word="الْمُغِيرَة" data-meaning="Al-Mughirah" data-root="غ - ي - ر (Gh-Y-R)" data-type="Proper Noun" data-tense="N/A">الْمُغِيرَة</span>
+    <span class="word" onclick="showData(this)" data-word="بن" data-meaning="Son of" data-root="ب - ن - ى" data-type="Noun" data-tense="N/A">بن</span>
+    <span class="word" onclick="showData(this)" data-word="بَرْدِزبَه" data-meaning="Bardizbah" data-root="Persian Origin" data-type="Proper Noun" data-tense="N/A">بَرْدِزبَه</span>
+    <span class="word" onclick="showData(this)" data-word="الْبُخَارِيُّ" data-meaning="Al-Bukhari (From Bukhara)" data-root="Geographic Attributive" data-type="Proper Noun (Nisbah)" data-tense="N/A">الْبُخَارِيُّ</span>
+    <span class="word" onclick="showData(this)" data-word="الْجُعْفِيُّ" data-meaning="Al-Ju'fi" data-root="Tribal Attributive" data-type="Proper Noun (Nisbah)" data-tense="N/A">الْجُعْفِيُّ</span>
+    <span class="word" onclick="showData(this)" data-word="[رقم:1]،" data-meaning="Number 1" data-root="N/A" data-type="Reference Number" data-tense="N/A">[رقم:1]،</span>
+    <span class="word" onclick="showData(this)" data-word="وَأَبُو" data-meaning="And Father of" data-root="أ - ب - و" data-type="Conjunction + Noun" data-tense="N/A">وَأَبُو</span>
+    <span class="word" onclick="showData(this)" data-word="الْحُسَيْنِ" data-meaning="Al-Husayn" data-root="ح - س - ن (Ḥ-S-N)" data-type="Proper Noun" data-tense="N/A">الْحُسَيْنِ</span>
+    <span class="word" onclick="showData(this)" data-word="مُسْلِمٌ" data-meaning="Muslim" data-root="س - ل - م (S-L-M)" data-type="Proper Noun" data-tense="N/A">مُسْلِمٌ</span>
+    <span class="word" onclick="showData(this)" data-word="بنُ" data-meaning="Son of" data-root="ب - ن - ى" data-type="Noun" data-tense="N/A">بنُ</span>
+    <span class="word" onclick="showData(this)" data-word="الْحَجَّاج" data-meaning="Al-Hajjaj" data-root="ح - ج - ج (Ḥ-J-J)" data-type="Proper Noun" data-tense="N/A">الْحَجَّاج</span>
+    <span class="word" onclick="showData(this)" data-word="بن" data-meaning="Son of" data-root="ب - ن - ى" data-type="Noun" data-tense="N/A">بن</span>
+    <span class="word" onclick="showData(this)" data-word="مُسْلِم" data-meaning="Muslim" data-root="س - ل - م" data-type="Proper Noun" data-tense="N/A">مُسْلِم</span>
+    <span class="word" onclick="showData(this)" data-word="الْقُشَيْرِيُّ" data-meaning="Al-Qushayri" data-root="Tribal Attributive" data-type="Proper Noun (Nisbah)" data-tense="N/A">الْقُشَيْرِيُّ</span>
+    <span class="word" onclick="showData(this)" data-word="النَّيْسَابُورِيُّ" data-meaning="Al-Naysaburi (From Nishapur)" data-root="Geographic Attributive" data-type="Proper Noun (Nisbah)" data-tense="N/A">النَّيْسَابُورِيُّ</span>
+    <span class="word" onclick="showData(this)" data-word="[رقم:1907]" data-meaning="Number 1907" data-root="N/A" data-type="Reference Number" data-tense="N/A">[رقم:1907]</span>
+    <span class="word" onclick="showData(this)" data-word="رَضِيَ اللهُ عَنْهُمَا" data-meaning="May Allah be pleased with both of them" data-root="ر-ض-ي / إلَه" data-type="Honorific Phrase (Dual)" data-tense="Past Form (Supplication)">رَضِيَ اللهُ عَنْهُمَا</span>
+    <span class="word" onclick="showData(this)" data-word="فِي" data-meaning="In" data-root="N/A" data-type="Preposition" data-tense="N/A">فِي</span>
+    <span class="word" onclick="showData(this)" data-word="&quot;صَحِيحَيْهِمَا&quot;" data-meaning="Their two authentic books" data-root="ص - ح - ح (Ṣ-Ḥ-Ḥ)" data-type="Noun (Dual + Pronoun)" data-tense="N/A">"صَحِيحَيْهِمَا"</span>
+    <span class="word" onclick="showData(this)" data-word="اللذَينِ" data-meaning="Which both" data-root="N/A" data-type="Relative Pronoun (Dual)" data-tense="N/A">اللذَينِ</span>
+    <span class="word" onclick="showData(this)" data-word="هُمَا" data-meaning="They both" data-root="N/A" data-type="Personal Pronoun (Dual)" data-tense="N/A">هُمَا</span>
+    <span class="word" onclick="showData(this)" data-word="أَصَحُّ" data-meaning="The most authentic" data-root="ص - ح - ح (Ṣ-Ḥ-Ḥ)" data-type="Elative Noun (Superlative)" data-tense="N/A">أَصَحُّ</span>
+    <span class="word" onclick="showData(this)" data-word="الْكُتُبِ" data-meaning="The books" data-root="ك - ت - ب (K-T-B)" data-type="Noun (Plural, Definite)" data-tense="N/A">الْكُتُبِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْمُصَنَّفَةِ." data-meaning="Compiled / Classified / Authored" data-root="ص - ن - ف (Ṣ-N-F)" data-type="Passive Participle (Definite)" data-tense="N/A">الْمُصَنَّفَةِ.</span>
+  </div>
+
+  <div id="analysis-panel" class="analysis-panel">
+    <div id="panel-word" class="panel-header">Select a Word Above</div>
+    <div class="data-row"><span class="label">Translation:</span><span id="panel-meaning" class="value">Click a boxed word to start analysis</span></div>
+    <div class="data-row"><span class="label">Arabic Root:</span><span id="panel-root" class="value">-</span></div>
+    <div class="data-row"><span class="label">Part of Speech:</span><span id="panel-type" class="value">-</span></div>
+    <div class="data-row"><span class="label">Verb Tense:</span><span id="panel-tense" class="value">-</span></div>
+  </div>
+
+  <div class="translation-box">
+    <div class="translation-title">📜 Full English Translation</div>
+    It is narrated on the authority of Amirul Mu'minin, Abu Hafs 'Umar bin al-Khattab (ra) who said:<br>
+    I heard the Messenger of Allah (ﷺ) say: "Actions are (judged) by motives (niyyah), so each man will have what he intended. Thus, he whose migration (hijrah) was to Allah and His Messenger, his migration is to Allah and His Messenger; but he whose migration was for some worldly thing he might gain, or for a wife he might marry, his migration is to that for which he migrated." [Bukhari & Muslim]
+  </div>
+</div>
+
+<script>
+  function showData(element) {
+    const allWords = document.querySelectorAll('.word');
+    allWords.forEach(w => w.classList.remove('active'));
+    element.classList.add('active');
+    
+    document.getElementById('panel-word').innerText = element.getAttribute('data-word');
+    document.getElementById('panel-meaning').innerText = element.getAttribute('data-meaning');
+    document.getElementById('panel-root').innerText = element.getAttribute('data-root');
+    document.getElementById('panel-type').innerText = element.getAttribute('data-type');
+    document.getElementById('panel-tense').innerText = element.getAttribute('data-tense');
+  }
+</script>
+</body>
+</html>
