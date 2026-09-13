@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hadith 04 - Hadith on Creation</title>
+<style>
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    background-color: transparent; 
+    padding: 15px; 
+    color: #37352f; 
+    margin: 0;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e9e9e6;
+  }
+  .header-area {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header-icon {
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
+  .header-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #37352f;
+    margin: 0;
+  }
+  .badge {
+    display: inline-block;
+    background: #f1f1ef;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #7c7b77;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  .instruction {
+    font-size: 13px;
+    color: #7c7b77;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .arabic-text { 
+    font-size: 28px; 
+    line-height: 2.6; 
+    direction: rtl; 
+    text-align: right; 
+    white-space: normal;
+    word-break: keep-all;
+    user-select: none;
+    margin-bottom: 25px;
+  }
+  .word { 
+    display: inline-block; 
+    cursor: pointer; 
+    padding: 2px 6px; 
+    margin: 3px 4px; 
+    border-radius: 4px; 
+    background-color: #f7f7f5;
+    border: 1px solid #e9e9e6;
+    transition: all 0.15s ease; 
+  }
+  .word:hover { 
+    background: #efefed; 
+    color: #2383e2; 
+  }
+  .word.active {
+    background: #edf2f7;
+    color: #2b6cb0;
+    border-color: #2b6cb0;
+    font-weight: 600;
+  }
+  .analysis-panel { 
+    padding: 20px; 
+    background: #f7f7f5; 
+    border-radius: 8px; 
+    font-size: 15px; 
+    text-align: left; 
+    border-left: 4px solid #2b6cb0;
+    margin-bottom: 25px;
+  }
+  .panel-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e9e9e6;
+    padding-bottom: 6px;
+  }
+  .data-row {
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+  .label {
+    font-weight: 600;
+    color: #7c7b77;
+    display: inline-block;
+    width: 130px;
+  }
+  .value {
+    color: #37352f;
+    font-weight: 500;
+  }
+  .translation-box {
+    padding: 20px;
+    background: #fcfcfc;
+    border: 1px solid #e9e9e6;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #37352f;
+    text-align: left;
+  }
+  .translation-title {
+    font-weight: bold;
+    color: #7c7b77;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header-area">
+    <div class="header-icon">📖</div>
+    <h1 class="header-title">The Creation of Man</h1>
+    <span class="badge">Hadith 04 / 40</span>
+  </div>
+
+  <div class="instruction">💡 Click any Arabic word below to analyze its root, grammar, and tense.</div>
+  
+  <div class="arabic-text">
+    <span class="word" onclick="showData(this)" data-word="عَنْ" data-meaning="On the authority of" data-root="N/A" data-type="Preposition" data-tense="N/A">عَنْ</span>
+    <span class="word" onclick="showData(this)" data-word="أَبِي" data-meaning="Father of" data-root="أ - ب - و" data-type="Noun (Genitive)" data-tense="N/A">أَبِي</span>
+    <span class="word" onclick="showData(this)" data-word="عَبْدِ" data-meaning="Servant of" data-root="ع - ب - د" data-type="Noun (Genitive)" data-tense="N/A">عَبْدِ</span>
+    <span class="word" onclick="showData(this)" data-word="الرَّحْمَنِ" data-meaning="The Most Merciful" data-root="ر - ح - م" data-type="Proper Noun (Definite)" data-tense="N/A">الرَّحْمَنِ</span>
+    <span class="word" onclick="showData(this)" data-word="عَبْدِ" data-meaning="Abdullah (Servant)" data-root="ع - ب - د" data-type="Noun" data-tense="N/A">عَبْدِ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Of Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="بْنِ" data-meaning="Son of" data-root="ب - ن - ى" data-type="Noun" data-tense="N/A">بْنِ</span>
+    <span class="word" onclick="showData(this)" data-word="مَسْعُودٍ" data-meaning="Masood" data-root="س - ع - د" data-type="Proper Noun" data-tense="N/A">مَسْعُودٍ</span>
+    <span class="word" onclick="showData(this)" data-word="رَضِيَ" data-meaning="May He be pleased" data-root="ر - ض - ي" data-type="Verb" data-tense="Past (Madi)">رَضِيَ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word" onclick="showData(this)" data-word="عَنْهُ" data-meaning="With him" data-root="N/A" data-type="Prepositional Phrase" data-tense="N/A">عَنْهُ</span>
+    <span class="word" onclick="showData(this)" data-word="قَالَ:" data-meaning="He said" data-root="ق - و - ل" data-type="Verb" data-tense="Past (Madi)">قَالَ:</span>
+    <span class="word" onclick="showData(this)" data-word="حَدَّثَنَا" data-meaning="Narrated to us" data-root="ح - د - ث" data-type="Verb + Attached Pronoun" data-tense="Past (Madi)">حَدَّثَنَا</span>
+    <span class="word" onclick="showData(this)" data-word="رَسُولُ" data-meaning="The Messenger" data-root="ر - س - ل" data-type="Noun" data-tense="N/A">رَسُولُ</span>
+    <span class="word" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Of Allah" data-root="إلَه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="صلى الله عليه وسلم" data-meaning="Peace and blessings be upon him" data-root="N/A" data-type="Honorific Phrase" data-tense="N/A">صلى الله عليه وسلم</span>
+    <span class="word" onclick="showData(this)" data-word="-وَهُوَ" data-meaning="And he is" data-root="N/A" data-type="Conjunction + Pronoun" data-tense="N/A">-وَهُوَ</span>
+    <span class="word" onclick="showData(this)" data-word="الصَّادِقُ" data-meaning="The truthful" data-root="ص - د - ق" data-type="Active Participle (Definite)" data-tense="N/A">الصَّادِقُ</span>
+    <span class="word" onclick="showData(this)" data-word="الْمَصْدُوقُ-:" data-meaning="The believed / confirmed" data-root="ص - د - ق" data-type="Passive Participle (Definite)" data-tense="N/A">الْمَصْدُوقُ-:</span>
+    <span class="word" onclick="showData(this)" data-word="&quot;إِنَّ" data-meaning="Verily / Surely" data-root="N/A" data-type="Accusative Particle" data-tense="N/A">"إنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="أَحَدَكُمْ" data-meaning="One of you" data-root="أ - ح - د" data-type="Noun + Attached Pronoun" data-tense="N/A">أَحَدَكُمْ</span>
+    <span class="word" onclick="showData(this)" data-word="يُجْمَعُ" data-meaning="Is brought together" data-root="ج - م - ع" data-type="Passive Verb" data-tense="Present (Mudari)">يُجْمَعُ</span>
+    <span class="word" onclick="showData(this)" data-word="خَلْقُهُ" data-meaning="His creation" data-root="خ - ل - ق" data-type="Noun + Attached Pronoun" data-tense="N/A">خَلْقُهُ</span>
+    <span class="word" onclick="showData(this)" data-word="فِي" data-meaning="In" data-root="N/A" data-type="Preposition" data-tense="N/A">فِي</span>
+    <span class="word" onclick="showData(this)" data-word="بَطْنِ" data-meaning="Womb / Belly" data-root="ب - ط - ن" data-type="Noun (Genitive)" data-tense="N/A">بَطْنِ</span>
+    <span class="word" onclick="showData(this)" data-word="أُمِّهِ" data-meaning="His mother" data-root="أ - م - م" data-type="Noun + Attached Pronoun" data-tense="N/A">أُمِّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="أَرْبَعِينَ" data-meaning="Forty" data-root="ر - ب - ع" data-type="Noun / Number" data-tense="N/A">أَرْبَعِينَ</span>
+    <span class="word" onclick="showData(this)" data-word="يَوْمًا" data-meaning="Days" data-root="ي - و - م" data-type="Noun (Adverb of Time)" data-tense="N/A">يَوْمًا</span>
+    <span class="word" onclick="showData(this)" data-word="نُطْفَةً،" data-meaning="A drop (Nutfah)" data-root="ن - ط - ف" data-type="Noun (Circumstantial)" data-tense="N/A">نُطْفَةً،</span>
+    <span class="word" onclick="showData(this)" data-word="ثُمَّ" data-meaning="Then" data-root="N/A" data-type="Conjunction Particle" data-tense="N/A">ثُمَّ</span>
+    <span class="word" onclick="showData(this)" data-word="يَكُونُ" data-meaning="He becomes / is" data-root="ك - w - ن" data-type="Defective Verb" data-tense="Present (Mudari)">يَكُونُ</span>
+    <span class="word" onclick="showData(this)" data-word="عَلَقَةً" data-meaning="A clot of blood ('Alaqah)" data-root="ع - ل - ق" data-type="Noun" data-tense="N/A">عَلَقَةً</span>
+    <span class="word" onclick="showData(this)" data-word="مِثْلَ" data-meaning="Like / Equal to" data-root="م - ث - ل" data-type="Noun" data-tense="N/A">مِثْلَ</span>
+    <span class="word" onclick="showData(this)" data-word="ذَلِكَ،" data-meaning="That" data-root="N/A" data-type="Demonstrative Pronoun" data-tense="N/A">ذَلِكَ،</span>
+    <span class="word" onclick="showData(this)" data-word="ثُمَّ" data-meaning="Then" data-root="N/A" data-type="Conjunction Particle" data-tense="N/A">ثُمَّ</span>
+    <span class="word" onclick="showData(this)" data-word="يَكُونُ" data-meaning="He becomes / is" data-root="ك - w - ن" data-type="Defective Verb" data-tense="Present (Mudari)">يَكُونُ</span>
+    <span class="word" onclick="showData(this)" data-word="مُضْغَةً" data-meaning="A morsel of flesh (Mudghah)" data-root="م - ض - غ" data-type="Noun" data-tense="N/A">مُضْغَةً</span>
+    <span class="word" onclick="showData(this)" data-word="مِثْلَ" data-meaning="Like / Equal to" data-root="م - ث - ل" data-type="Noun" data-tense="N/A">مِثْلَ</span>
+    <span class="word" onclick="showData(this)" data-word="ذَلِكَ،" data-meaning="That" data-root="N/A" data-type="Demonstrative Pronoun" data-tense="N/A">ذَلِكَ،</span>
+    <span class="word" onclick="showData(this)" data-word="ثُمَّ" data-meaning="Then" data-root="N/A" data-type="Conjunction Particle" data-tense="N/A">ثُمَّ</span>
+    <span class="word" onclick="showData(this)" data-word="يُرْسَلُ" data-meaning="Is sent" data-root="ر - س - ل" data-type="Passive Verb" data-tense="Present (Mudari)">يُرْسَلُ</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَيْهِ" data-meaning="To him" data-root="N/A" data-type="Prepositional Phrase" data-tense="N/A">إلَيْهِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْمَلَكُ" data-meaning="The angel" data-root="م - ل - ك" data-type="Noun (Definite)" data-tense="N/A">الْمَلَكُ</span>
+    <span class="word" onclick="showData(this)" data-word="فَيَنْفُخُ" data-meaning="And he blows" data-root="ن - ف - خ" data-type="Conjunction + Verb" data-tense="Present (Mudari)">فَيَنْفُخُ</span>
+    <span class="word" onclick="showData(this)" data-word="فِيهِ" data-meaning="Into him / it" data-root="N/A" data-type="Prepositional Phrase" data-tense="N/A">فِيهِ</span>
+    <span class="word" onclick="showData(this)" data-word="الرُّوحَ،" data-meaning="The soul" data-root="ر - و - ح" data-type="Noun (Definite)" data-tense="N/A">الرُّوحَ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَيُؤْمَرُ" data-meaning="And is commanded" data-root="أ - م - ر" data-type="Conjunction + Passive Verb" data-tense="Present (Mudari)">وَيُؤْمَرُ</span>
+    <span class="word" onclick="showData(this)" data-word="بِأَرْبَعِ" data-meaning="With four" data-root="ر - ب - ع" data-type="Preposition + Number" data-tense="N/A">بِأَرْبَعِ</span>
+    <span class="word" onclick="showData(this)" data-word="كَلِمَاتٍ:" data-meaning="Words / Matters" data-root="ك - ل - م" data-type="Noun (Plural)" data-tense="N/A">كَلِمَاتٍ:</span>
+    <span class="word" onclick="showData(this)" data-word="بِكَتْبِ" data-meaning="To write down" data-root="ك - ت - ب" data-type="Preposition + Noun" data-tense="N/A">بِكَتْبِ</span>
+    <span class="word" onclick="showData(this)" data-word="رِزْقِهِ،" data-meaning="His sustenance (Rizq)" data-root="ر - ز - ق" data-type="Noun + Attached Pronoun" data-tense="N/A">رِزْقِهِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَأَجَلِهِ،" data-meaning="And his life span" data-root="أ - ج - ل" data-type="Noun Phrase" data-tense="N/A">وَأَجَلِهِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَعَمَلِهِ،" data-meaning="And his actions / deeds" data-root="ع - م - ل" data-type="Noun Phrase" data-tense="N/A">وَعَمَلِهِ،</span>
+    <span class="word" onclick="showData(this)" data-word="وَشَقِيٍّ" data-meaning="And whether wretched / unhappy" data-root="ش - ق - ي" data-type="Noun / Adjective" data-tense="N/A">وَشَقِيٍّ</span>
+    <span class="word" onclick="showData(this)" data-word="أَمْ" data-meaning="Or" data-root="N/A" data-type="Conjunction Particle" data-tense="N/A">أَمْ</span>
+    <span class="word" onclick="showData(this)" data-word="سَعِيدٍ؛" data-meaning="Happy / Blessed" data-root="س - ع - د" data-type="Noun / Adjective" data-tense="N/A">سَعِيدٍ؛</span>
+    <span class="word" onclick="showData(this)" data-word="فَوَاللَّهِ" data-meaning="So by Allah" data-root="إلَه" data-type="Conjunction + Oath Particle + Noun" data-tense="N/A">فَوَاللَّهِ</span>
+    <span class="word" onclick="showData(this)" data-word="الَّذِي" data-meaning="The One Who" data-root="N/A" data-type="Relative Pronoun" data-tense="N/A">الَّذِي</span>
+    <span class="word" onclick="showData(this)" data-word="لَا" data-meaning="No" data-root="N/A" data-type="Negative Particle" data-tense="N/A">لَا</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَهَ" data-meaning="Deity worthy of worship" data-root="إلَه" data-type="Noun" data-tense="N/A">إلَهَ</span>
+    <span class="word" onclick="showData(this)" data-word="غَيْرُهُ" data-meaning="Other than Him" data-root="غ - ي - ر" data-type="Noun + Attached Pronoun" data-tense="N/A">غَيْرُهُ</span>
+    <span class="word" onclick="showData(this)" data-word="إِنَّ" data-meaning="Verily / Surely" data-root="N/A" data-type="Accusative Particle" data-tense="N/A">إنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="أَحَدَكُمْ" data-meaning="One of you" data-root="أ - ح - د" data-type="Noun + Attached Pronoun" data-tense="N/A">أَحَدَكُمْ</span>
+    <span class="word" onclick="showData(this)" data-word="لَيَعْمَلُ" data-meaning="Definitely performs / works" data-root="ع - م - ل" data-type="Emphasis Particle + Verb" data-tense="Present (Mudari)">لَيَعْمَلُ</span>
+    <span class="word" onclick="showData(this)" data-word="بِعَمَلِ" data-meaning="With the actions" data-root="ع - م - ل" data-type="Preposition + Noun" data-tense="N/A">بِعَمَلِ</span>
+    <span class="word" onclick="showData(this)" data-word="أَهْلِ" data-meaning="People of" data-root="أ - ه - ل" data-type="Noun" data-tense="N/A">أَهْلِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْجَنَّةِ" data-meaning="Paradise" data-root="ج - ن - ن" data-type="Noun (Definite)" data-tense="N/A">الْجَنَّةِ</span>
+    <span class="word" onclick="showData(this)" data-word="حَتَّى" data-meaning="Until" data-root="N/A" data-type="Particle" data-tense="N/A">حَتَّى</span>
+    <span class="word" onclick="showData(this)" data-word="مَا" data-meaning="Not" data-root="N/A" data-type="Negative Particle" data-tense="N/A">مَا</span>
+    <span class="word" onclick="showData(this)" data-word="يَكُونُ" data-meaning="There is / remains" data-root="ك - w - ن" data-type="Defective Verb" data-tense="Present (Mudari)">يَكُونُ</span>
+    <span class="word" onclick="showData(this)" data-word="بَيْنَهُ" data-meaning="Between him" data-root="ب - ي - ن" data-type="Adverb + Attached Pronoun" data-tense="N/A">بَيْنَهُ</span>
+    <span class="word" onclick="showData(this)" data-word="وَبَيْنَهَا" data-meaning="And between it" data-root="ب - ي - ن" data-type="Adverb Phrase" data-tense="N/A">وَبَيْنَهَا</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَّا" data-meaning="Except" data-root="N/A" data-type="Exceptive Particle" data-tense="N/A">إلَّا</span>
+    <span class="word" onclick="showData(this)" data-word="ذِرَاعٌ" data-meaning="An arm's length" data-root="ذ - ر - ع" data-type="Noun" data-tense="N/A">ذِرَاعٌ</span>
+    <span class="word" onclick="showData(this)" data-word="فَيَسْبِقُ" data-meaning="And then overtakes / precedes" data-root="س - ب - ق" data-type="Conjunction + Verb" data-tense="Present (Mudari)">فَيَسْبِقُ</span>
+    <span class="word" onclick="showData(this)" data-word="عَلَيْهِ" data-meaning="Upon him" data-root="N/A" data-type="Prepositional Phrase" data-tense="N/A">عَلَيْهِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْكِتَابُ" data-meaning="The writing / decree" data-root="ك - t - ب" data-type="Noun (Definite)" data-tense="N/A">الْكِتَابُ</span>
+    <span class="word" onclick="showData(this)" data-word="فَيَعْمَلُ" data-meaning="So he acts / works" data-root="ع - م - ل" data-type="Conjunction + Verb" data-tense="Present (Mudari)">فَيَعْمَلُ</span>
+    <span class="word" onclick="showData(this)" data-word="بِعَمَلِ" data-meaning="With the deeds" data-root="ع - م - ل" data-type="Preposition + Noun" data-tense="N/A">بِعَمَلِ</span>
+    <span class="word" onclick="showData(this)" data-word="أَهْلِ" data-meaning="People of" data-root="أ - ه - ل" data-type="Noun" data-tense="N/A">أَهْلِ</span>
+    <span class="word" onclick="showData(this)" data-word="النَّارِ" data-meaning="The Hellfire" data-root="ن - و - ر" data-type="Noun (Definite)" data-tense="N/A">النَّارِ</span>
+    <span class="word" onclick="showData(this)" data-word="فَيَدْخُلُهَا." data-meaning="And thus enters it" data-root="د - خ - ل" data-type="Conjunction + Verb + Attached Pronoun" data-tense="Present (Mudari)">فَيَدْخُلُهَا.</span>
+    <span class="word" onclick="showData(this)" data-word="وَإِنَّ" data-meaning="And verily / surely" data-root="N/A" data-type="Conjunction + Particle" data-tense="N/A">وَإِنَّ</span>
+    <span class="word" onclick="showData(this)" data-word="أَحَدَكُمْ" data-meaning="One of you" data-root="أ - ح - د" data-type="Noun + Attached Pronoun" data-tense="N/A">أَحَدَكُمْ</span>
+    <span class="word" onclick="showData(this)" data-word="لَيَعْمَلُ" data-meaning="Definitely performs / works" data-root="ع - م - ل" data-type="Emphasis Particle + Verb" data-tense="Present (Mudari)">لَيَعْمَلُ</span>
+    <span class="word" onclick="showData(this)" data-word="بِعَمَلِ" data-meaning="With the actions" data-root="ع - م - ل" data-type="Preposition + Noun" data-tense="N/A">بِعَمَلِ</span>
+    <span class="word" onclick="showData(this)" data-word="أَهْلِ" data-meaning="People of" data-root="أ - ه - ل" data-type="Noun" data-tense="N/A">أَهْلِ</span>
+    <span class="word" onclick="showData(this)" data-word="النَّارِ" data-meaning="The Hellfire" data-root="ن - و - ر" data-type="Noun (Definite)" data-tense="N/A">النَّارِ</span>
+    <span class="word" onclick="showData(this)" data-word="حَتَّى" data-meaning="Until" data-root="N/A" data-type="Particle" data-tense="N/A">حَتَّى</span>
+    <span class="word" onclick="showData(this)" data-word="مَا" data-meaning="Not" data-root="N/A" data-type="Negative Particle" data-tense="N/A">مَا</span>
+    <span class="word" onclick="showData(this)" data-word="يَكُونُ" data-meaning="There is / remains" data-root="ك - w - ن" data-type="Defective Verb" data-tense="Present (Mudari)">يَكُونُ</span>
+    <span class="word" onclick="showData(this)" data-word="بَيْنَهُ" data-meaning="Between him" data-root="ب - ي - ن" data-type="Adverb + Attached Pronoun" data-tense="N/A">بَيْنَهُ</span>
+    <span class="word" onclick="showData(this)" data-word="وَبَيْنَهَا" data-meaning="And between it" data-root="ب - ي - ن" data-type="Adverb Phrase" data-tense="N/A">وَبَيْنَهَا</span>
+    <span class="word" onclick="showData(this)" data-word="إِلَّا" data-meaning="Except" data-root="N/A" data-type="Exceptive Particle" data-tense="N/A">إلَّا</span>
+    <span class="word" onclick="showData(this)" data-word="ذِرَاعٌ" data-meaning="An arm's length" data-root="ذ - ر - ع" data-type="Noun" data-tense="N/A">ذِرَاعٌ</span>
+    <span class="word" onclick="showData(this)" data-word="فَيَسْبِقُ" data-meaning="And then overtakes / precedes" data-root="س - ب - ق" data-type="Conjunction + Verb" data-tense="Present (Mudari)">فَيَسْبِقُ</span>
+    <span class="word" onclick="showData(this)" data-word="عَلَيْهِ" data-meaning="Upon him" data-root="N/A" data-type="Prepositional Phrase" data-tense="N/A">عَلَيْهِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْكِتَابُ" data-meaning="The writing / decree" data-root="ك - t - ب" data-type="Noun (Definite)" data-tense="N/A">الْكِتَابُ</span>
+    <span class="word" onclick="showData(this)" data-word="فَيَعْمَلُ" data-meaning="So he acts / works" data-root="ع - م - ل" data-type="Conjunction + Verb" data-tense="Present (Mudari)">فَيَعْمَلُ</span>
+    <span class="word" onclick="showData(this)" data-word="بِعَمَلِ" data-meaning="With the deeds" data-root="ع - م - ل" data-type="Preposition + Noun" data-tense="N/A">بِعَمَلِ</span>
+    <span class="word" onclick="showData(this)" data-word="أَهْلِ" data-meaning="People of" data-root="أ - ه - ل" data-type="Noun" data-tense="N/A">أَهْلِ</span>
+    <span class="word" onclick="showData(this)" data-word="الْجَنَّةِ" data-meaning="Paradise" data-root="ج - ن - ن" data-type="Noun (Definite)" data-tense="N/A">الْجَنَّةِ</span>
+    <span class="word" onclick="showData(this)" data-word="فَيَدْخُلُهَا&quot;." data-meaning="And thus enters it" data-root="د - خ - ل" data-type="Conjunction + Verb + Attached Pronoun" data-tense="Present (Mudari)">فَيَدْخُلُهَا".</span>
+    <span class="word" onclick="showData(this)" data-word="[رَوَاهُ" data-meaning="Narrated it" data-root="ر - و - ي" data-type="Verb + Attached Pronoun" data-tense="Past (Madi)">[رَوَاهُ</span>
+    <span class="word" onclick="showData(this)" data-word="الْبُخَارِيُّ]" data-meaning="Al-Bukhari" data-root="ب - خ - ر" data-type="Proper Noun" data-tense="N/A">الْبُخَارِيُّ]</span>
+    <span class="word" onclick="showData(this)" data-word="،" data-meaning="," data-root="N/A" data-type="Punctuation" data-tense="N/A">،</span>
+    <span class="word" onclick="showData(this)" data-word="[وَمُسْلِمٌ]" data-meaning="And Muslim" data-root="س - ل - م" data-type="Proper Noun Phrase" data-tense="N/A">[وَمُسْلِمٌ]</span>
+    <span class="word" onclick="showData(this)" data-word="." data-meaning="." data-root="N/A" data-type="Punctuation" data-tense="N/A">.</span>
+  </div>
+
+  <div id="analysis-panel" class="analysis-panel">
+    <div id="panel-word" class="panel-header">Select a Word Above</div>
+    <div class="data-row"><span class="label">Translation:</span><span id="panel-meaning" class="value">Click a boxed word to start</span></div>
+    <div class="data-row"><span class="label">Arabic Root:</span><span id="panel-root" class="value">-</span></div>
+    <div class="data-row"><span class="label">Part of Speech:</span><span id="panel-type" class="value">-</span></div>
+    <div class="data-row"><span class="label">Verb Tense:</span><span id="panel-tense" class="value">-</span></div>
+  </div>
+
+  <div class="translation-box">
+    <div class="translation-title">Full English Translation</div>
+    On the authority of Abdullah ibn Masood (ra), who said: The Messenger of Allah (ﷺ), and he is the truthful, the believed, narrated to us, “Verily the creation of each one of you is brought together in his mother’s womb for forty days in the form of a nutfah (a drop), then he becomes an alaqah (clot of blood) for a like period, then a mudghah (morsel of flesh) for a like period, then there is sent to him the angel who blows his soul into him and who is commanded with four matters: to write down his rizq (sustenance), his life span, his actions, and whether he will be happy or unhappy (i.e., whether or not he will enter Paradise). By the One, other than Whom there is no deity, verily one of you performs the actions of the people of Paradise until there is but an arms length between him and it, and that which has been written overtakes him, and so he acts with the actions of the people of the Hellfire and thus enters it; and verily one of you performs the actions of the people of the Hellfire, until there is but an arms length between him and it, and that which has been written overtakes him and so he acts with the actions of the people of Paradise and thus he enters it.” [Bukhari & Muslim]
+  </div>
+</div>
+
+<script>
+  function showData(element) {
+    const allWords = document.querySelectorAll('.word');
+    allWords.forEach(w => w.classList.remove('active'));
+    element.classList.add('active');
+    
+    document.getElementById('panel-word').innerText = element.getAttribute('data-word');
+    document.getElementById('panel-meaning').innerText = element.getAttribute('data-meaning');
+    document.getElementById('panel-root').innerText = element.getAttribute('data-root');
+    document.getElementById('panel-type').innerText = element.getAttribute('data-type');
+    document.getElementById('panel-tense').innerText = element.getAttribute('data-tense');
+    
+    document.getElementById('analysis-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+</script>
+</body>
+</html>
