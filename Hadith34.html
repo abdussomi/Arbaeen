@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hadith 34 Word-by-Word Explorer</title>
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f7f7f5;
+      --text-primary: #37352f;
+      --text-secondary: #6b6a65;
+      --accent: #238380;
+      --accent-light: #eaf6f5;
+      --border: #e9e9e6;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      margin: 0;
+      padding: 12px;
+      line-height: 1.5;
+    }
+    .explorer-container {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .hadith-text-box {
+      background-color: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      direction: rtl;
+      text-align: justify;
+    }
+    .word-span {
+      font-family: "Amiri", "Traditional Arabic", serif;
+      font-size: 24px;
+      display: inline-block;
+      margin: 4px 6px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: var(--text-primary);
+    }
+    .word-span:hover {
+      background-color: var(--border);
+    }
+    .word-span.active {
+      background-color: var(--accent-light);
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .analysis-panel {
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      padding: 14px;
+    }
+    .panel-title {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      font-size: 14px;
+    }
+    .data-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .data-label {
+      font-size: 11px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    .data-val {
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    .translation-box {
+      background-color: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-primary);
+    }
+  </style>
+</head>
+<body>
+
+<div class="explorer-container">
+  
+  <!-- Hadith Text Segment: First Half -->
+  <div class="hadith-text-box">
+    <span class="word-span" onclick="showData(this)" data-word="عَنْ" data-meaning="On the authority of" data-root="ع ن ن" data-type="Preposition" data-tense="N/A">عَنْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="أَبِي" data-meaning="Abu (father of)" data-root="أ ب و" data-type="Noun (Genitive)" data-tense="N/A">أَبِي</span>
+    <span class="word-span" onclick="showData(this)" data-word="سَعِيدٍ" data-meaning="Sa'eed" data-root="س ع د" data-type="Proper Noun" data-tense="N/A">سَعِيدٍ</span>
+    <span class="word-span" onclick="showData(this)" data-word="الْخُدْرِيِّ" data-meaning="al-Khudree" data-root="خ د ر" data-type="Proper Noun (Ansab)" data-tense="N/A">الْخُدْرِيِّ</span>
+    <span class="word-span" onclick="showData(this)" data-word="رَضِيَ" data-meaning="May He be pleased" data-root="ر ض و" data-type="Verb" data-tense="Past (Form I)">رَضِيَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="أ ل ه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="عَنْهُ" data-meaning="with him" data-root="ع ن ن" data-type="Preposition + Pronoun" data-tense="N/A">عَنْهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="قَالَ" data-meaning="who said" data-root="ق و ل" data-type="Verb" data-tense="Past (Form I)">قَالَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="سَمِعْتُ" data-meaning="I heard" data-root="س م ع" data-type="Verb + Pronoun" data-tense="Past (Form I)">سَمِعْتُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="رَسُولَ" data-meaning="the Messenger of" data-root="ر س ل" data-type="Noun" data-tense="N/A">رَسُولَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Allah" data-root="أ ل ه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="صَلَّى" data-meaning="May He bless" data-root="ص ل و" data-type="Verb" data-tense="Past (Form II)">صَلَّى</span>
+    <span class="word-span" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="أ ل ه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="عَلَيْهِ" data-meaning="upon him" data-root="ع ل و" data-type="Preposition + Pronoun" data-tense="N/A">عَلَيْهِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="وَسَلَّمَ" data-meaning="and grant peace" data-root="س ل م" data-type="Verb" data-tense="Past (Form II)">وَسَلَّمَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="يَقُولُ" data-meaning="say / saying" data-root="ق و ل" data-type="Verb" data-tense="Present (Form I)">يَقُولُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="مَنْ" data-meaning="Whosoever / Whoever" data-root="م ن" data-type="Conditional Particle" data-tense="N/A">مَنْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="رَأَىٰ" data-meaning="sees / witnessed" data-root="ر أ ي" data-type="Verb" data-tense="Past (Form I)">رَأَىٰ</span>
+    <span class="word-span" onclick="showData(this)" data-word="مِنْكُمْ" data-meaning="among you" data-root="ك م" data-type="Preposition + Pronoun" data-tense="N/A">مِنْكُمْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="مُنْكَرًا" data-meaning="an evil / wrong action" data-root="ن ك ر" data-type="Noun (Passive Participle, Form IV)" data-tense="N/A">مُنْكَرًا</span>
+    <span class="word-span" onclick="showData(this)" data-word="فَلْيُغَيِّرْهُ" data-meaning="then let him change it" data-root="غ ي ر" data-type="Command Particle + Verb + Pronoun" data-tense="Present Jussive (Form II)">فَلْيُغَيِّرْهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="بِيَدِهِ" data-meaning="with his hand" data-root="ي د ي" data-type="Preposition + Noun + Pronoun" data-tense="N/A">بِيَدِهِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="فَإِنْ" data-meaning="and if / so if" data-root="إِ ن" data-type="Conjunction + Conditional Particle" data-tense="N/A">فَإِنْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="لَمْ" data-meaning="not" data-root="ل م" data-type="Negating Jussive Particle" data-tense="N/A">لَمْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="يَسْتَطِعْ" data-meaning="he is able / capable" data-root="ط و ع" data-type="Verb" data-tense="Present Jussive (Form X)">يَسْتَطِعْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="فَبِلِسَانِهِ" data-meaning="then with his tongue" data-root="ل س ن" data-type="Response Particle + Preposition + Noun + Pronoun" data-tense="N/A">فَبِلِسَانِهِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="فَإِنْ" data-meaning="and if / so if" data-root="إِ ن" data-type="Conjunction + Conditional Particle" data-tense="N/A">فَإِنْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="لَمْ" data-meaning="not" data-root="ل م" data-type="Negating Jussive Particle" data-tense="N/A">لَمْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="يَسْتَطِعْ" data-meaning="he is able / capable" data-root="ط و ع" data-type="Verb" data-tense="Present Jussive (Form X)">يَسْتَطِعْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="فَبِقَلْبِهِ" data-meaning="then with his heart" data-root="ق ل ب" data-type="Response Particle + Preposition + Noun + Pronoun" data-tense="N/A">فَبِقَلْبِهِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="وَذَٰلِكَ" data-meaning="and that" data-root="ذ ا / ك" data-type="Conjunction + Demonstrative Pronoun" data-tense="N/A">وَذَٰلِكَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="أَضْعَفُ" data-meaning="is the weakest" data-root="ض ع ف" data-type="Noun (Elative Adjective)" data-tense="N/A">أَضْعَفُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="الْإِيمَانِ" data-meaning="of faith / belief" data-root="أ م ن" data-type="Noun" data-tense="N/A">الْإِيمَانِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="رَوَاهُ" data-meaning="narrated it" data-root="ر و ي" data-type="Verb + Pronoun" data-tense="Past (Form I)">رَوَاهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="مُسْلِمٌ" data-meaning="Muslim" data-root="س ل م" data-type="Proper Noun" data-tense="N/A">مُسْلِمٌ</span>
+  </div>
+
+  <!-- Dynamic Analysis Panel (Positioned Below Arabic Text) -->
+  <div class="analysis-panel" id="analysisPanel">
+    <div class="panel-title">Word Analysis</div>
+    <div class="panel-grid">
+      <div class="data-item"><span class="data-label">Word</span><span class="data-val" id="val-word">-</span></div>
+      <div class="data-item"><span class="data-label">Meaning</span><span class="data-val" id="val-meaning">-</span></div>
+      <div class="data-item"><span class="data-label">Root</span><span class="data-val" id="val-root">-</span></div>
+      <div class="data-item"><span class="data-label">Type</span><span class="data-val" id="val-type">-</span></div>
+      <div class="data-item"><span class="data-label">Tense/Form</span><span class="data-val" id="val-tense">-</span></div>
+    </div>
+  </div>
+
+  <!-- Dedicated Translation Box -->
+  <div class="translation-box">
+    <strong>Full Translation:</strong><br>
+    <p style="margin: 4px 0; font-style: italic;">
+      "On the authority of Abu Sa`eed al-Khudree (may Allah be pleased with him) who said: I heard the Messenger of Allah (ﷺ) say, 'Whosoever of you sees an evil, let him change it with his hand; and if he is not able to do so, then [let him change it] with his tongue; and if he is not able to do so, then with his heart — and that is the weakest of faith.'"
+    </p>
+    <small style="color: var(--text-secondary);">— Narrated by Muslim.</small>
+  </div>
+
+</div>
+
+<!-- JavaScript Event Engine -->
+<script>
+  function showData(element) {
+    // Remove active styles from all word spans
+    const spans = document.querySelectorAll('.word-span');
+    spans.forEach(span => span.classList.remove('active'));
+    
+    // Add active style to selected span
+    element.classList.add('active');
+    
+    // Extract data attributes
+    const word = element.getAttribute('data-word');
+    const meaning = element.getAttribute('data-meaning');
+    const root = element.getAttribute('data-root');
+    const type = element.getAttribute('data-type');
+    const tense = element.getAttribute('data-tense');
+    
+    // Dynamically inject data values into the Analysis Panel
+    document.getElementById('val-word').innerText = word;
+    document.getElementById('val-meaning').innerText = meaning;
+    document.getElementById('val-root').innerText = root;
+    document.getElementById('val-type').innerText = type;
+    document.getElementById('val-tense').innerText = tense;
+  }
+</script>
+
+</body>
+</html>

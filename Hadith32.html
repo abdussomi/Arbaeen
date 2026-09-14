@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hadith 32 Word-by-Word Explorer</title>
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f7f7f5;
+      --text-primary: #37352f;
+      --text-secondary: #6b6a65;
+      --accent: #238380;
+      --accent-light: #eaf6f5;
+      --border: #e9e9e6;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      margin: 0;
+      padding: 12px;
+      line-height: 1.5;
+    }
+    .explorer-container {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .hadith-text-box {
+      background-color: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      direction: rtl;
+      text-align: justify;
+    }
+    .word-span {
+      font-family: "Amiri", "Traditional Arabic", serif;
+      font-size: 24px;
+      display: inline-block;
+      margin: 4px 6px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: var(--text-primary);
+    }
+    .word-span:hover {
+      background-color: var(--border);
+    }
+    .word-span.active {
+      background-color: var(--accent-light);
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .analysis-panel {
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      padding: 14px;
+    }
+    .panel-title {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      font-size: 14px;
+    }
+    .data-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .data-label {
+      font-size: 11px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    .data-val {
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    .translation-box {
+      background-color: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-primary);
+    }
+  </style>
+</head>
+<body>
+
+<div class="explorer-container">
+  
+  <!-- Hadith Text Segment: First Half -->
+  <div class="hadith-text-box">
+    <span class="word-span" onclick="showData(this)" data-word="عَنْ" data-meaning="On the authority of" data-root="ع ن ن" data-type="Preposition" data-tense="N/A">عَنْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="أَبِي" data-meaning="Abu (father of)" data-root="أ ب و" data-type="Noun (Genitive)" data-tense="N/A">أَبِي</span>
+    <span class="word-span" onclick="showData(this)" data-word="سَعِيدٍ" data-meaning="Sa'eed" data-root="س ع د" data-type="Proper Noun" data-tense="N/A">سَعِيدٍ</span>
+    <span class="word-span" onclick="showData(this)" data-word="سَعْدِ" data-meaning="Sa'd" data-root="س ع د" data-type="Proper Noun" data-tense="N/A">سَعْدِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="بْنِ" data-meaning="son of" data-root="ب ن و" data-type="Noun" data-tense="N/A">بْنِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="مَالِكِ" data-meaning="Malik" data-root="م ل ك" data-type="Proper Noun" data-tense="N/A">مَالِكِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="بْنِ" data-meaning="son of" data-root="ب ن و" data-type="Noun" data-tense="N/A">بْنِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="سِنَانٍ" data-meaning="Sinan" data-root="س ن ن" data-type="Proper Noun" data-tense="N/A">سِنَانٍ</span>
+    <span class="word-span" onclick="showData(this)" data-word="الْخُدْرِيِّ" data-meaning="al-Khudree" data-root="خ د ر" data-type="Proper Noun (Ansab)" data-tense="N/A">الْخُدْرِيِّ</span>
+    <span class="word-span" onclick="showData(this)" data-word="رَضِيَ" data-meaning="May be pleased" data-root="ر ض و" data-type="Verb" data-tense="Past (Form I)">رَضِيَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="أ ل ه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="عَنْهُ" data-meaning="with him" data-root="ع ن ن" data-type="Preposition + Pronoun" data-tense="N/A">عَنْهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="أَنَّ" data-meaning="that" data-root="انن" data-type="Particle" data-tense="N/A">أَنَّ</span>
+    <span class="word-span" onclick="showData(this)" data-word="رَسُولَ" data-meaning="the Messenger of" data-root="ر س ل" data-type="Noun" data-tense="N/A">رَسُولَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="اللَّهِ" data-meaning="Allah" data-root="أ ل ه" data-type="Proper Noun" data-tense="N/A">اللَّهِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="صَلَّى" data-meaning="May He bless" data-root="ص ل و" data-type="Verb" data-tense="Past (Form II)">صَلَّى</span>
+    <span class="word-span" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="أ ل ه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="عَلَيْهِ" data-meaning="upon him" data-root="ع ل و" data-type="Preposition + Pronoun" data-tense="N/A">عَلَيْهِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="وَسَلَّمَ" data-meaning="and grant peace" data-root="س ل م" data-type="Verb" data-tense="Past (Form II)">وَسَلَّمَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="قَالَ" data-meaning="said" data-root="ق و ل" data-type="Verb" data-tense="Past (Form I)">قَالَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="لَا" data-meaning="There should be no / Neither" data-root="ل ا" data-type="Negative Particle (Absolute)" data-tense="N/A">لَا</span>
+    <span class="word-span" onclick="showData(this)" data-word="ضَرَرَ" data-meaning="harming (inflicting harm)" data-root="ض ر ر" data-type="Noun" data-tense="N/A">ضَرَرَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="وَلَا" data-meaning="nor / and no" data-root="ل ا" data-type="Conjunction + Negative Particle" data-tense="N/A">وَلَا</span>
+    <span class="word-span" onclick="showData(this)" data-word="ضِرَارَ" data-meaning="reciprocating harm" data-root="ض ر ر" data-type="Noun" data-tense="N/A">ضِرَارَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="حَدِيثٌ" data-meaning="A narrative / tradition" data-root="ح د ث" data-type="Noun" data-tense="N/A">حَدِيثٌ</span>
+    <span class="word-span" onclick="showData(this)" data-word="حَسَنٌ" data-meaning="good / reliable" data-root="ح س ن" data-type="Adjective" data-tense="N/A">حَسَنٌ</span>
+    <span class="word-span" onclick="showData(this)" data-word="رَوَاهُ" data-meaning="narrated it" data-root="ر w ي" data-type="Verb + Pronoun" data-tense="Past (Form I)">رَوَاهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="ابْنُ" data-meaning="the son of" data-root="ب ن و" data-type="Noun" data-tense="N/A">ابْنُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="مَاجَهْ" data-meaning="Majah" data-root="م ج ه" data-type="Proper Noun" data-tense="N/A">مَاجَهْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="وَالدَّارَقُطْنِيُّ" data-meaning="and al-Daraqutni" data-root="د ر ق ط ن" data-type="Conjunction + Proper Noun" data-tense="N/A">وَالدَّارَقُطْنِيُّ</span>
+    <span class="word-span" onclick="showData(this)" data-word="وَغَيْرُهُمَا" data-meaning="and both of besides them" data-root="غ ي ر" data-type="Noun + Pronoun" data-tense="N/A">وَغَيْرُهُمَا</span>
+    <span class="word-span" onclick="showData(this)" data-word="مُسْنَدًا" data-meaning="as a supported / connected chain" data-root="س ن د" data-type="Noun (Passive Participle)" data-tense="N/A">مُسْنَدًا</span>
+    <span class="word-span" onclick="showData(this)" data-word="وَرَوَاهُ" data-meaning="and narrated it" data-root="ر w ي" data-type="Conjunction + Verb + Pronoun" data-tense="Past (Form I)">وَرَوَاهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="مَالِكٌ" data-meaning="Malik" data-root="م ل ك" data-type="Proper Noun" data-tense="N/A">مَالِكٌ</span>
+    <span class="word-span" onclick="showData(this)" data-word="فِي" data-meaning="in" data-root="ف ي ي" data-type="Preposition" data-tense="N/A">فِي</span>
+    <span class="word-span" onclick="showData(this)" data-word="الْمُوَطَّإِ" data-meaning="al-Muwatta (book)" data-root="و ط أ" data-type="Noun (Passive Participle)" data-tense="N/A">الْمُوَطَّإِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="عَنْ" data-meaning="from" data-root="ع ن ن" data-type="Preposition" data-tense="N/A">عَنْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="عَمْرِو" data-meaning="Amr" data-root="ع م ر" data-type="Proper Noun" data-tense="N/A">عَمْرِو</span>
+    <span class="word-span" onclick="showData(this)" data-word="بْنِ" data-meaning="son of" data-root="ب ن و" data-type="Noun" data-tense="N/A">بْنِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="يَحْيَىٰ" data-meaning="Yahya" data-root="ح ي ي" data-type="Proper Noun" data-tense="N/A">يَحْيَىٰ</span>
+    <span class="word-span" onclick="showData(this)" data-word="عَنْ" data-meaning="from" data-root="ع ن ن" data-type="Preposition" data-tense="N/A">عَنْ</span>
+    <span class="word-span" onclick="showData(this)" data-word="أَبِيهِ" data-meaning="his father" data-root="أ ب و" data-type="Noun + Pronoun" data-tense="N/A">أَبِيهِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="عَنِ" data-meaning="from" data-root="ع ن ن" data-type="Preposition" data-tense="N/A">عَنِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="النَّبِيِّ" data-meaning="the Prophet" data-root="ن ب أ" data-type="Noun" data-tense="N/A">النَّبِيِّ</span>
+    <span class="word-span" onclick="showData(this)" data-word="صَلَّى" data-meaning="May He bless" data-root="ص ل و" data-type="Verb" data-tense="Past (Form II)">صَلَّى</span>
+    <span class="word-span" onclick="showData(this)" data-word="اللَّهُ" data-meaning="Allah" data-root="أ ل ه" data-type="Proper Noun" data-tense="N/A">اللَّهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="عَلَيْهِ" data-meaning="upon him" data-root="ع ل و" data-type="Preposition + Pronoun" data-tense="N/A">عَلَيْهِ</span>
+    <span class="word-span" onclick="showData(this)" data-word="وَسَلَّمَ" data-meaning="and grant peace" data-root="س ل م" data-type="Verb" data-tense="Past (Form II)">وَسَلَّمَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="مُرْسَلًا" data-meaning="in broken/mursal form" data-root="ر س ل" data-type="Noun (Passive Participle)" data-tense="N/A">مُرْسَلًا</span>
+    <span class="word-span" onclick="showData(this)" data-word="فَأَسْقَطَ" data-meaning="and so he dropped" data-root="س ق ط" data-type="Conjunction + Verb" data-tense="Past (Form I)">فَأَسْقَطَ</span>
+    <span class="word-span" onclick="showData(this)" data-word="أَبَا" data-meaning="Abu" data-root="أ ب و" data-type="Noun (Accusative)" data-tense="N/A">أَبَا</span>
+    <span class="word-span" onclick="showData(this)" data-word="سَعِيدٍ" data-meaning="Sa'eed" data-root="س ع د" data-type="Proper Noun" data-tense="N/A">سَعِيدٍ</span>
+    <span class="word-span" onclick="showData(this)" data-word="وَلَهُ" data-meaning="and it has" data-root="ل ه" data-type="Conjunction + Preposition + Pronoun" data-tense="N/A">وَلَهُ</span>
+    <span class="word-span" onclick="showData(this)" data-word="طُرُقٌ" data-meaning="chains of narrations" data-root="ط ر ق" data-type="Noun (Plural)" data-tense="N/A">طُرُقٌ</span>
+    <span class="word-span" onclick="showData(this)" data-word="يُقَوِّي" data-meaning="strengthens" data-root="ق و ي" data-type="Verb" data-tense="Present (Form II)">يُقَوِّي</span>
+    <span class="word-span" onclick="showData(this)" data-word="بَعْضُهَا" data-meaning="some of them" data-root="ب ع ض" data-type="Noun + Pronoun" data-tense="N/A">بَعْضُهَا</span>
+    <span class="word-span" onclick="showData(this)" data-word="بَعْضًا" data-meaning="another" data-root="ب ع ض" data-type="Noun" data-tense="N/A">بَعْضًا</span>
+  </div>
+
+  <!-- Dynamic Analysis Panel (Positioned Below Arabic Text) -->
+  <div class="analysis-panel" id="analysisPanel">
+    <div class="panel-title">Word Analysis</div>
+    <div class="panel-grid">
+      <div class="data-item"><span class="data-label">Word</span><span class="data-val" id="val-word">-</span></div>
+      <div class="data-item"><span class="data-label">Meaning</span><span class="data-val" id="val-meaning">-</span></div>
+      <div class="data-item"><span class="data-label">Root</span><span class="data-val" id="val-root">-</span></div>
+      <div class="data-item"><span class="data-label">Type</span><span class="data-val" id="val-type">-</span></div>
+      <div class="data-item"><span class="data-label">Tense/Form</span><span class="data-val" id="val-tense">-</span></div>
+    </div>
+  </div>
+
+  <!-- Dedicated Translation Box -->
+  <div class="translation-box">
+    <strong>Full Translation:</strong><br>
+    <p style="margin: 4px 0; font-style: italic;">
+      "On the authority of Abu Sa’eed al-Khudree (may Allah be pleased with him), that the Messenger of Allah (peace and blessings of Allah be upon him) said: 'There should be neither harming (darar) nor reciprocating harm (dirar).'"
+    </p>
+    <small style="color: var(--text-secondary);">
+      — A hasan hadeeth related by Ibn Majah, ad-Daraqutnee and others as a musnad hadeeth. It was also related by Malik in al-Muwatta in mursal form from Amr bin Yahya, from his father from the Prophet (peace and blessings of Allah be upon him), but leaving Abu Sa’eed from the chain. And it has other chains of narrations that strengthen one another.
+    </small>
+  </div>
+
+</div>
+
+<!-- JavaScript Event Engine -->
+<script>
+  function showData(element) {
+    // Remove active styles from all word spans
+    const spans = document.querySelectorAll('.word-span');
+    spans.forEach(span => span.classList.remove('active'));
+    
+    // Add active style to selected span
+    element.classList.add('active');
+    
+    // Extract data attributes
+    const word = element.getAttribute('data-word');
+    const meaning = element.getAttribute('data-meaning');
+    const root = element.getAttribute('data-root');
+    const type = element.getAttribute('data-type');
+    const tense = element.getAttribute('data-tense');
+    
+    // Dynamically inject data values into the Analysis Panel
+    document.getElementById('val-word').innerText = word;
+    document.getElementById('val-meaning').innerText = meaning;
+    document.getElementById('val-root').innerText = root;
+    document.getElementById('val-type').innerText = type;
+    document.getElementById('val-tense').innerText = tense;
+  }
+</script>
+
+</body>
+</html>
